@@ -1,0 +1,107 @@
+/* ACTION */
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.action {
+  @include flex-base(column, 0);
+  @include flex-alignment(space-between, center);
+  margin: 15% 2.5%;
+  color: $text;
+
+  .logo-and-options {
+    @include flex-base(column, 60px);
+    @include measures(100%, auto);
+
+    figure {
+      @include flex-base(row, 0);
+      @include flex-alignment(center, center);
+
+      img {
+        @include measures(auto, 71px);
+      }
+    }
+
+    ul {
+      @include flex-base(column, 10px);
+
+      li {
+        @include flex-base(row, 10px);
+        @include flex-alignment(start, center);
+        @include measures(97.5%, auto);
+        align-self: flex-end;
+
+        &:hover {
+          color: $text-active;
+        }
+
+        ion-icon {
+          font-size: $extra-large;
+        }
+      }
+    }
+  }
+
+  .action-box {
+    @include flex-base(column, 10px);
+
+    .installated {
+      @include flex-base(row, 3px);
+      font-size: 12px;
+
+      a {
+        color: $text;
+
+        &:hover {
+          color: $text-active;
+        }
+      }
+    }
+
+    .game-version {
+      font-weight: bold;
+    }
+
+    .version-and-region {
+      @include flex-base(row, 5px);
+      @include flex-alignment(center, center);
+      @include measures(280px, auto);
+      color: $text;
+
+      .version {
+        @include flex-base(row, 0);
+        @include flex-alignment(space-between, center);
+        @include measures(100%, 40px);
+        background-color: $foreground;
+        border-radius: 5px;
+        padding: 0 10px;
+
+        &:hover {
+          background-color: $foreground-active;
+          color: $text-active;
+        }
+
+        ion-icon {
+          font-size: $medium;
+        }
+      }
+
+      .region {
+        @include flex-base(row, 0);
+        @include flex-alignment(center, center);
+        @include measures(45px, 40px);
+        background-color: $foreground;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: $foreground-active;
+          color: $text-active;
+        }
+
+        ion-icon {
+          font-size: $extra-large;
+        }
+      }
+    }
+    @import "../components/buttons";
+  }
+}

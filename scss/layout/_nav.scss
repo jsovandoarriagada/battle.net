@@ -1,0 +1,155 @@
+/* NAV */
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+nav {
+  @include flex-base(row, 0);
+  @include flex-alignment(center, center);
+
+  .games {
+    @include flex-base(row, 5px);
+    @include flex-alignment(center, center);
+    @include measures(97.5%, 60px);
+    border-radius: 5px;
+
+    .all-games {
+      @include flex-base(row, 10px);
+      @include flex-alignment(center, center);
+      @include measures(170px, 60px);
+      cursor: pointer;
+      background-color: $foreground;
+      border-radius: 5px;
+      color: $text;
+
+      &:hover {
+        background-color: $foreground-active;
+        color: $text-active;
+      }
+
+      ion-icon {
+        font-size: $extra-large;
+      }
+      p {
+        font-weight: 500;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .all-games {
+        @include measures(70px, 60px);
+
+        p {
+          display: none;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .all-games {
+        @include measures(60px, 50px);
+
+        ion-icon {
+          font-size: $extra-large;
+        }
+      }
+    }
+    .favorite-games {
+      @include flex-base(row, 0);
+      @include measures(100%, 60px);
+      background-color: $foreground;
+      border-radius: 5px;
+
+      a {
+        @include flex-base(row, 0);
+        @include flex-alignment(center, center);
+        @include measures(60px, 60px);
+        cursor: pointer;
+
+        img {
+          @include measures(auto, 40px);
+        }
+
+        @media (max-width: 480px) {
+          img {
+            @include measures(auto, 30px);
+          }
+        }
+
+        &:hover {
+          background-color: $foreground-active;
+        }
+      }
+
+      @media (max-width: 480px) {
+        a {
+          @include measures(50px, 50px);
+        }
+      }
+
+      #hearthstone {
+        &:hover {
+          border-radius: 5px 0 0 5px;
+        }
+      }
+
+      .add-game {
+        @include flex-base(row, 0);
+        @include flex-alignment(center, center);
+        @include measures(60px, 60px);
+      }
+
+      @media (max-width: 480px) {
+        .add-game {
+          @include measures(50px, 50px);
+        }
+      }
+
+      .add {
+        @include flex-base(row, 0);
+        @include flex-alignment(center, center);
+        @include measures(40px, 40px);
+        background-color: $foreground-active;
+        color: $text;
+        border-radius: 50%;
+        font-size: $extra-large;
+
+        &:hover {
+          color: $text-active;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .add {
+          @include measures(30px, 30px);
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      .games-list {
+        @include measures(100%, 50px);
+      }
+    }
+
+    .selected-all-games {
+      background-color: $foreground-active;
+      color: $text-active;
+      border-radius: 5px;
+    }
+
+    .selected-hearthstone {
+      background-color: $foreground-active;
+      border-radius: 5px 0 0 5px;
+    }
+
+    .selected {
+      background-color: $foreground-active;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .games-list {
+      @include measures(100%, 50px);
+    }
+  }
+}

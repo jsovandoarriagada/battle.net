@@ -1,0 +1,26 @@
+// ALERTS
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.alerts {
+  @include flex-base(row, 10px);
+  @include flex-alignment(start, center);
+  @include measures(auto, 60px);
+  background-color: $alert;
+  color: $background;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-shadow: none;
+  margin: 15px;
+
+  ion-icon {
+    font-size: $extra-large;
+  }
+}
+
+@media (max-width: 480px) {
+  .alerts {
+    display: none;
+  }
+}

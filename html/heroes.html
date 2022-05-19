@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fictional Battle.net Web App, Heroes of the Storm Section" />
+    <meta name="keywords" content="Heroes of the Storm, Games, Battle.net, Blizzard" />
+    <meta name="author" content="José Simón Ovando Arriagada" />
+    <title>Battle.net &mdash; Heroes of the Storm</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../img/favicon/site.webmanifest" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="layout-games">
+      <!-- HEADER -->
+      <header>
+        <!-- HEADER: BATTLE.NET LOGO -->
+        <div class="logo-and-menu">
+          <a href="../index.html">
+            <img src="../img/logos/battle-net.png" alt="Battle.net's Logo" />
+          </a>
+        </div>
+        <div class="alerts-and-notifications">
+          <!-- HEADER: ALERTS -->
+          <ion-icon name="alert-circle"></ion-icon>
+          <!-- HEADER: NOTIFICATIONS -->
+          <ion-icon name="notifications"></ion-icon>
+          <!-- HEADER: AVATAR -->
+          <div class="avatar-and-icon">
+            <div class="avatar">
+              <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+              <div class="online"></div>
+            </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <!-- USER -->
+      <section class="user">
+        <!-- USER: AVATAR -->
+        <div class="avatar-and-icon">
+          <div class="avatar">
+            <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+            <div class="online"></div>
+          </div>
+          <div class="user-name">
+            <p>Simón</p>
+            <p>Online</p>
+          </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+        <!-- USER: ADD FRIEND, SETTINGS & INPUT -->
+        <div class="user-bar">
+          <div class="add-friend">
+            <ion-icon name="person-add"></ion-icon>
+          </div>
+          <div class="friend-settings">
+            <ion-icon name="settings"></ion-icon>
+          </div>
+          <div class="search-input">
+            <input type="text" name="" id="" />
+            <div class="search">
+              <ion-icon name="search"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NAV -->
+      <nav>
+        <!-- NAV: GAMES -->
+        <div class="games">
+          <!-- NAV: ALL GAMES -->
+          <a class="all-games" href="../index.html">
+            <ion-icon name="grid-sharp"></ion-icon>
+            <p>ALL GAMES</p>
+          </a>
+          <!-- NAV: FAVORITE GAMES -->
+          <div class="favorite-games">
+            <a id="hearthstone" href="hearthstone.html">
+              <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+            </a>
+            <a class="selected" href="heroes.html">
+              <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+            </a>
+            <a href="reforged.html">
+              <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+            </a>
+            <a href="starcraft.html">
+              <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+            </a>
+            <a href="warcraft.html">
+              <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+            </a>
+            <div class="add-game">
+              <a class="add" href="#">
+                <ion-icon name="add"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ACTION -->
+      <section class="action">
+        <!-- ACTION: GAME LOGO -->
+        <div class="logo-and-options">
+          <figure>
+            <img src="../img/logos/heroes.png" alt="Heroes of the Storm's Logo" />
+          </figure>
+          <!-- ACTION: OPTIONS -->
+          <ul>
+            <li>
+              <ion-icon name="cart"></ion-icon>
+              <p>Shop Heroes of the Storm</p>
+            </li>
+            <li>
+              <ion-icon name="chatbox-ellipses"></ion-icon>
+              <p>Forums</p>
+            </li>
+            <li>
+              <ion-icon name="alert-circle"></ion-icon>
+              <p>Patch Notes</p>
+            </li>
+            <li>
+              <ion-icon name="cloud-upload"></ion-icon>
+              <p>Upgrade Available</p>
+            </li>
+          </ul>
+        </div>
+        <div class="action-box">
+          <!-- ACTION: GAME VERSION & REGION -->
+          <p class="game-version">GAME VERSION</p>
+          <div class="version-and-region">
+            <div class="version">
+              <p>Heroes of the Storm</p>
+              <ion-icon name="chevron-down-sharp"></ion-icon>
+            </div>
+            <div class="region">
+              <ion-icon name="globe-sharp"></ion-icon>
+            </div>
+          </div>
+          <!-- ACTION: INSTALL -->
+          <a href="install.html"><p>Install</p></a>
+          <!-- ACTION: LOCATE -->
+          <p class="installated">Already Installated? <a href="#">Locate the game.</a></p>
+        </div>
+      </section>
+      <!-- MAIN -->
+      <main>
+        <!-- <h1>HEROES OF THE STORM</h1> -->
+        <!-- MAIN: ALERT -->
+        <div class="alerts">
+          <ion-icon name="alert-circle-sharp"></ion-icon>
+          <p>We are performing a scheduled maintenance.</p>
+        </div>
+        <!-- MAIN: CAROUSEL -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/carousel/hots-carousel-desktop-1.jpg" class="desktop-img w-100" alt="Heroes of the Storm Carousel 1" />
+              <img src="../img/carousel/hots-carousel-mobile-1.jpg" class="mobile-img w-100" alt="Heroes of the Storm Carousel 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carousel/hots-carousel-desktop-2.jpg" class="desktop-img w-100" alt="Heroes of the Storm Carousel 2" />
+              <img src="../img/carousel/hots-carousel-mobile-2.jpg" class="mobile-img w-100" alt="Heroes of the Storm Carousel 2" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- MAIN: CARDS -->
+        <section class="cards-games">
+          <!-- MAIN: CARD 1 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#heroes-of-the-storm-1">
+            <img src="../img/cards/hots-card-1.jpg" class="card-img-top" alt="Heroes of the Storm's Card 1" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Patch Notes - May 18, 2021</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 1 -->
+          <div class="modal fade" id="heroes-of-the-storm-1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+                    <p>Patch Notes - May 18, 2021</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hots-card-1.jpg" alt="Heroes of the Storm's Card 1" />
+                  <p>Experience Globes will no longer time out after 6 seconds. Instead, they will shrink and become worth 25% of their original value for an additional 39 seconds.</p>
+                  <p><em>Developer comment: We are continuously looking for gameplay changes that make the game more fun while also educating the player base. This change does both - giving teams that missed the crucial 6 second timing window a chance for partial redemption while, at the same time, showing players where they are missing valuable experience via lane soaking.</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 2 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#heroes-of-the-storm-2">
+            <img src="../img/cards/hots-card-2.jpg" class="card-img-top" alt="Heroes of the Storm's Card 2" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>A Future Worth Cosplaying For</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 2 -->
+          <div class="modal fade" id="heroes-of-the-storm-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+                    <p>A Future Worth Cosplaying For</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hots-card-2.jpg" alt="Heroes of the Storm's Card 2" />
+                  <p>Armed with foam, hot glue, fabric, sewing machines, and the can-do attitude inherent to all cosplayers, four denizens of the Nexus valiantly took it upon themselves to craft and wear lovingly-recreated mantles inspired by their favorite Overwatch heroes. Now, Valla, Johanna, Raynor, and Stitches have become the heroes the multiverse never knew it needed. The creation of their ensembles was overseen by a talented team of Heroes of the Storm artists, who, excited by the prospect of assembling a new, rag-tag team of heroes wearing the outfits belonging to some of the most iconic Overwatch characters, stitched each thread of these four new skins together with fannish fervor.</p>
+                  <p>Suit up and sport the distinctive threads of the multiverse's most valiant heroes with new Overwatch Cosplay skins for four of your favorite Heroes of the Storm characters. Don the visor and masquerade around the battlefield in the name of justice as the mysterious Raynor: 76, or stitch together an appetite for mayhem—and flesh—as the hodgepodge Hogmeat Stitches.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 3 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#heroes-of-the-storm-3">
+            <img src="../img/cards/hots-card-3.jpg" class="card-img-top" alt="Heroes of the Storm's Card 3" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Patch Notes - May 12, 2021</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 3 -->
+          <div class="modal fade" id="heroes-of-the-storm-3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+                    <p>Patch Notes - May 12, 2021</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hots-card-3.jpg" alt="Heroes of the Storm's Card 3" />
+                  <p>Our next Heroes of the Storm patch has just hit the Public Test Realm and will be available for playtesting until May 17, PDT. As always, if you encounter any bugs during your PTR play sessions, please stop by the PTR Bug Report forum to let us know about your experiences.</p>
+                  <p>We are constantly looking for ways of improving the player experience. Common terms across the MOBA Genre have been added to many heroes allowing players to search for things like Double Soak, Sustain, Escape, Camps, Burst, Mage, Stun, CC, etc. Please give the ones listed a try and others you may think of. You may find it comes up with something you expect. Remember that if you need an alphabetical return you will need to have the Alphabetical flag turned on.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 4 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#heroes-of-the-storm-4">
+            <img src="../img/cards/hots-card-4.jpg" class="card-img-top" alt="Heroes of the Storm's Card 4" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Together We Are Strong</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 4 -->
+          <div class="modal fade" id="heroes-of-the-storm-4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+                    <p>Together We Are Strong</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hots-card-4.jpg" alt="Heroes of the Storm's Card 4" />
+                  <p>From battling on the frontlines of the Omnic Crisis, to teaming up with a mega-sized murloc looking to sway an eternal conflict between two towering celestial beings--the realm-shattering magics of the Nexus causes Blizzard characters to often end up transplanted from their earthly homes to some new and surprising territory. One such journey was that of Aleksandra Zaryanova, aka Zarya.</p>
+                  <p>With our 30th anniversary around the corner, now seems like a great time to track down the designers who brought Zarya to life in Overwatch and Heroes of the Storm and find out what goes into creating an iconic Hero that spans two worlds.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 5 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#heroes-of-the-storm-5">
+            <img src="../img/cards/hots-card-5.jpg" class="card-img-top" alt="Heroes of the Storm's Card 5" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>There is a Gnoll in the Nexus</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 5 -->
+          <div class="modal fade" id="heroes-of-the-storm-5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+                    <p>There is a Gnoll in the Nexus</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hots-card-5.jpg" alt="Heroes of the Storm's Card 5" />
+                  <p><em>“By the time you realize you're no match, Hogger is thinking how best to eat you.”</em> -Senior Game Designer, David Warner.</p>
+                  <div class="responsive-iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/9r5d3z4xGio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p>Strap on your [Studded Leather Belt of the Wolf], sharpen your shiniest common dagger, and abandon all hope. Armed with lobbable loot hoards, flailing strikes, and some devilishly-deadly spins, Hogger has abandoned his hill and headed straight for the Nexus!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 6 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#heroes-of-the-storm-6">
+            <img src="../img/cards/hots-card-6.jpg" class="card-img-top" alt="Heroes of the Storm's Card 6" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>The Arts-and-Crafts of War</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 6 -->
+          <div class="modal fade" id="heroes-of-the-storm-6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+                    <p>The Arts-and-Crafts of War</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hots-card-6.jpg" alt="Heroes of the Storm's Card 6" />
+                  <p>There's a war on in the Korprulu Sector: Battlecruisers are meeting Leviathans, and the asteroid fields are littered with the glowing husks of capital ships. The throne of the Zerg has been usurped by the invading Betrayer King of the Alliance, but there is a force that stands to oppose him. Who will emerge victorious? The newly crowned King of Blades, Arthas, or the resistance led by the Emperor of the Dominion, Anduin?</p>
+                  <p>Starting today, you can see the fight play out for yourself in the newly dropped CraftWars patch, with new skins, mounts, and more. To take in the creation tale of this mighty patch, we sat down with Assistant Art Director Trevor Jacobs and Senior Artist Andrew Kinabrew.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FRIENDS -->
+      <section class="friends">
+        <div class="favorites-list">
+          <ion-icon name="star"></ion-icon>
+          <p>Favorites - 3/3</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-2.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Bajheera</p>
+                <p>Blade's Edge Arena</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-3.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Kripparrian</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-4.jpg" alt="Friend's Avatar" />
+                <div class="friend-busy"></div>
+              </div>
+              <div class="friend-name">
+                <p>Pilav</p>
+                <p>Busy</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="friends-list">
+          <ion-icon name="people"></ion-icon>
+          <p>Friends - 6/8</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-5.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Itry</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-6.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Madvision</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-7.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Galadar</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-8.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Nymeria</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-9.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Fabriroth</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-10.jpg" alt="Friend's Avatar" />
+                <div class="friend-away"></div>
+              </div>
+              <div class="friend-name">
+                <p>Shaie</p>
+                <p>Away</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-11.jpg" alt="Friend's Avatar" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Eversio</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-12.jpg" alt="Friend's Avatar" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Crimson</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fictional Battle.net Web App, Starcraft II Section" />
+    <meta name="keywords" content="Starcraft II, Games, Battle.net, Blizzard" />
+    <meta name="author" content="José Simón Ovando Arriagada" />
+    <title>Battle.net &mdash; Starcraft II</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../img/favicon/site.webmanifest" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="layout-games">
+      <!-- HEADER -->
+      <header>
+        <!-- HEADER: BATTLE.NET LOGO -->
+        <div class="logo-and-menu">
+          <a href="../index.html">
+            <img src="../img/logos/battle-net.png" alt="Battle.net's Logo" />
+          </a>
+        </div>
+        <div class="alerts-and-notifications">
+          <!-- HEADER: ALERTS -->
+          <ion-icon name="alert-circle"></ion-icon>
+          <!-- HEADER: NOTIFICATIONS -->
+          <ion-icon name="notifications"></ion-icon>
+          <!-- HEADER: AVATAR -->
+          <div class="avatar-and-icon">
+            <div class="avatar">
+              <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+              <div class="online"></div>
+            </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <!-- USER -->
+      <section class="user">
+        <!-- USER: AVATAR -->
+        <div class="avatar-and-icon">
+          <div class="avatar">
+            <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+            <div class="online"></div>
+          </div>
+          <div class="user-name">
+            <p>Simón</p>
+            <p>Online</p>
+          </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+        <!-- USER: ADD FRIEND, SETTINGS & INPUT -->
+        <div class="user-bar">
+          <div class="add-friend">
+            <ion-icon name="person-add"></ion-icon>
+          </div>
+          <div class="friend-settings">
+            <ion-icon name="settings"></ion-icon>
+          </div>
+          <div class="search-input">
+            <input type="text" name="" id="" />
+            <div class="search">
+              <ion-icon name="search"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NAV -->
+      <nav>
+        <!-- NAV: GAMES -->
+        <div class="games">
+          <!-- NAV: ALL GAMES -->
+          <a class="all-games" href="../index.html">
+            <ion-icon name="grid-sharp"></ion-icon>
+            <p>ALL GAMES</p>
+          </a>
+          <!-- NAV: FAVORITE GAMES -->
+          <div class="favorite-games">
+            <a id="hearthstone" href="hearthstone.html">
+              <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+            </a>
+            <a href="heroes.html">
+              <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+            </a>
+            <a href="reforged.html">
+              <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+            </a>
+            <a class="selected" href="starcraft.html">
+              <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+            </a>
+            <a href="warcraft.html">
+              <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+            </a>
+            <div class="add-game">
+              <a class="add" href="#">
+                <ion-icon name="add"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ACTION -->
+      <section class="action">
+        <!-- ACTION: GAME LOGO -->
+        <div class="logo-and-options">
+          <figure>
+            <img src="../img/logos/starcraft-ii.png" alt="Starcraft II's Logo" />
+          </figure>
+          <!-- ACTION: OPTIONS -->
+          <ul>
+            <li>
+              <ion-icon name="cart"></ion-icon>
+              <p>Shop Starcraft II</p>
+            </li>
+            <li>
+              <ion-icon name="chatbox-ellipses"></ion-icon>
+              <p>Forums</p>
+            </li>
+            <li>
+              <ion-icon name="alert-circle"></ion-icon>
+              <p>Patch Notes</p>
+            </li>
+            <li>
+              <ion-icon name="cloud-upload"></ion-icon>
+              <p>Upgrade Available</p>
+            </li>
+          </ul>
+        </div>
+        <div class="action-box">
+          <!-- ACTION: GAME VERSION & REGION -->
+          <p class="game-version">GAME VERSION</p>
+          <div class="version-and-region">
+            <div class="version">
+              <p>Starcraft II</p>
+              <ion-icon name="chevron-down-sharp"></ion-icon>
+            </div>
+            <div class="region">
+              <ion-icon name="globe-sharp"></ion-icon>
+            </div>
+          </div>
+          <!-- ACTION: INSTALL -->
+          <a href="install.html"><p>Install</p></a>
+          <!-- ACTION: LOCATE -->
+          <p class="installated">Already Installated? <a href="#">Locate the game.</a></p>
+        </div>
+      </section>
+      <!-- MAIN -->
+      <main>
+        <!-- <h1>STARCRAFT II</h1> -->
+        <!-- MAIN: ALERT -->
+        <div class="alerts">
+          <ion-icon name="alert-circle-sharp"></ion-icon>
+          <p>We are performing a scheduled maintenance.</p>
+        </div>
+        <!-- MAIN: CAROUSEL -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/carousel/s2-carousel-desktop-1.jpg" class="desktop-img w-100" alt="Starcraft II's Carousel 1" />
+              <img src="../img/carousel/s2-carousel-mobile-1.jpg" class="mobile-img w-100" alt="Starcraft II's Carousel 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carousel/s2-carousel-desktop-2.jpg" class="desktop-img w-100" alt="Starcraft II's Carousel 2" />
+              <img src="../img/carousel/s2-carousel-mobile-2.jpg" class="mobile-img w-100" alt="Starcraft II's Carousel 2" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- MAIN: CARDS -->
+        <section class="cards-games">
+          <!-- MAIN: CARD 1 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#starcraft-ii-1">
+            <img src="../img/cards/s2-card-1.jpg" class="card-img-top" alt="Starcraft II's Card 1" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Patch Notes - Version 5.0.9</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 1 -->
+          <div class="modal fade" id="starcraft-ii-1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+                    <p>Patch Notes - Version 5.0.9</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/s2-card-1.jpg" alt="Starcraft II's Card 1" />
+                  <p>We are releasing a Balance Patch which was put together by our very own SC2 community. Over the past couple months, we have been working with various members of the community and tournament organizers to create a balance update for the game. We would like to recognize and acknowledge the members of the group for the upcoming changes you see below.</p>
+                  <p class="modal-title">Shield Battery</p>
+                  <p>Starting Energy reduced from 100 to 50.</p>
+                  <p class="modal-title">Dark Templar</p>
+                  <p>Now have a 0.75s attack delay after blink.</p>
+                  <p class="modal-title">Void Ray</p>
+                  <p>Increased build time from 37 to 43. Increased mineral cost from 200 to 250.</p>
+                  <p class="modal-title">Queen</p>
+                  <p>Can no longer transfuse off creep.</p>
+                  <p class="modal-title">Widow Mine</p>
+                  <p>Reduced the effectiveness of drilling claws from 0.71 seconds to 1.07 seconds.</p>
+                  <p class="modal-title">Lurker</p>
+                  <p>Reduced the effectiveness of adaptive talon from 0.71 seconds to 1.07 seconds.</p>
+                  <p class="modal-title">Nydus Worm</p>
+                  <p>Increased starting creep by 1 unit in each direction around the worm once it spawns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 2 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#starcraft-ii-2">
+            <img src="../img/cards/s2-card-2.jpg" class="card-img-top" alt="Starcraft II's Card 2" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>The Rise of Reynor</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 2 -->
+          <div class="modal fade" id="starcraft-ii-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+                    <p>The Rise of Reynor</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/s2-card-2.jpg" alt="Starcraft II's Card 2" />
+                  <p>At only eight years old, Riccardo Romiti pulled a game from a shop shelf, enamored with the portrait of a grizzled space marine emblazoned upon the box. Three years later, he would sign with a professional StarCraft II team and skyrocket to fame in the European StarCraft scene. Now, at only 18, he's a laureled prodigy and world champion—and only the second ever non-Korean to receive the title.</p>
+                  <p>Catch up with Riccardo “Reynor” Romiti, the 2021 IEM Katowice champion who became a StarCraft II professional at the age of 11, and learn more about his rise to fame, his secret to winning, and what he intends to do now that he's #1.</p>
+                  <p class="modal-title">Childhood of a Champion</p>
+                  <p>Reynor's first foray into the Koprulu Sector was over 10 years ago, when he received a copy of StarCraft II at the age of eight. “I purchased the game together with my father,” Reynor recalls. “I remember I had to pick out a gift, and we went to a game shop. I chose StarCraft II because I liked the cover of the game box.”</p>
+                  <p>Reynor spent the next three years quietly climbing up the ladder in StarCraft II, balancing his life and the prime of his childhood with the ever-increasing skills and fame he began to accrue as he neared the rank of Master, the second highest League in the game. To him, growing up playing the game was something he has always considered an amazing opportunity. “This game helped me in my real life so much, it's hard to even describe. I learned English quite well-mostly thanks to StarCraft II—and my memory got a lot better after I started playing it.”</p>
+                  <p>Years spent watching professional players engaged in whirlwind matches of high-stakes StarCraft inspired a young Reynor, who had only just begun his venture into a storied realm of esports that had already cultivated a number of legends. Reynor enjoyed watching Jens “Snute” Aasgaard, a Zerg player from Team Liquid, in particular. He considers Snute one of the most “solid” and influential StarCraft legends. “His play was always on point with his use of droning and mass queens.”</p>
+                  <p>Inspired by these legendary StarCraft players that had paved the path before him, Reynor struck out on the heels of his icons and began his ascent to stardom.</p>
+                  <p class="modal-title">Zerg Rushing into the Limelight</p>
+                  <p>At the age of 11, Reynor's ladder climb to fame escalated when he reached the rank of Master. His rapid rise in both skill and stardom culminated in mYinsanity, a Swiss esports organization, reaching out to him. “Since I started watching pro gamers, I’d always wanted to be one of them,” says Reynor. He recalls it as one of the most defining moments of his childhood. “I think when mYinsanity contacted me, back in 2013, was when I realized I could absolutely chase that dream. That experience was really important to me.”</p>
+                  <p>The same year, Reynor competed in the Italian LANs [local area network tournaments, where players are connected to the same network in one arena, allowing them to play against each other over a private connection] and debuted at the DreamHack Open tournament in Bucharest. He would go on to conquer the Italian StarCraft II scene, competing in and winning numerous LAN tournaments over the next five years. At only 16, he managed to qualify for the StarCraft II World Championship Series (WCS)—the youngest player to ever do so—and clawed his way into the top eight.</p>
+                  <p>The secret behind his prodigious rise through the ranks of StarCraft legends? “Brain and speed! Ahah, I'm just joking. I do think I'm pretty fast, and that's one of my strong points,” Reynor says. “But, I have also been playing a lot. That helps, because at this point, I have a solid understanding of the game. And I think my play style has changed a lot over the years, too. When I was a kid, I was way more aggressive than I am now. I was definitely playing with less brain. Now, I still have a very aggressive play style compared to most other Zerg players, but at least my plays make more sense now than they did three years ago.”</p>
+                  <p>His speed (and brain) lent themselves to his win at the 2021 IEM Katowice tournament, where he prevailed over the competition and secured his place among the esports stars, becoming the first non-Koren champion at IEM in 11 years and the second ever non-Korean World Champion. Now that Reynor’s landmark IEM victory has placed him firmly on top of the world, he has one goal: “Obviously, I want to win everything else!” he says. “I just hope I can keep doing what I love most—and that's playing StarCraft. And thank you, to the community, for supporting us as pro gamers. It means a lot. You are the best community by far; let's keep playing and watching this beautiful game!”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 3 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#starcraft-ii-3">
+            <img src="../img/cards/s2-card-3.jpg" class="card-img-top" alt="Starcraft II's Card 3" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Update - Oct 15, 2020</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 3 -->
+          <div class="modal fade" id="starcraft-ii-3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+                    <p>Update - Oct 15, 2020</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/s2-card-3.jpg" alt="Starcraft II's Card 3" />
+                  <p>StarCraft is one of a kind, and we're committed to making sure that those of you who love this universe like we do have a home here for many years to come. With that in mind, we want to let you know about a development change we're making for StarCraft II as we continue supporting it.</p>
+                  <p>As many of you know, Blizzard continues updating its games long after the initial release—some of you will remember that we were actively patching the original StarCraft more than 10 years after it first hit store shelves. This year we celebrated 10 years of StarCraft II with one of our largest-ever patches, with massive updates to the editor, Prestige Talents for Co-op Commanders, and gameplay improvements delivered to players worldwide.</p>
+                  <p>We're going to continue supporting StarCraft II in the same manner as we have with our previous longstanding games, such as Brood War, focusing primarily on what our core and competitive communities care about most. What this means is that we're not going to be producing additional for-purchase content, such as Commanders and War Chests, but we will continue doing season rolls and necessary balance fixes moving forward. On that last note, we're not planning a Q4 balance update given that we did one a few months ago, but as always, we do plan to continue doing them as needed in the future. StarCraft II esports, which is part of the highest echelon of professional competitive gaming, will also continue going strong as it has been through our partners ESL Gaming and GSL.</p>
+                  <p>We know some of our players have been looking forward to some of the things we're moving away from, but the good news is this change will free us up to think about what's next, not just with regard to StarCraft II, but for the StarCraft universe as a whole.</p>
+                  <p>StarCraft is core to Blizzard, and we've learned that it's a game that can change the lives of people who devote themselves to it, whether as a player, content creator, streamer, or member of the community (or developer). The outcome of each match is in your hands 100%. To become better, you have to look inward, be honest about any flaws, and dedicate yourself to improving. StarCraft teaches us that that process of improvement can be a reward in itself, and it' s certainly taught us a lot at Blizzard over the years.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 4 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#starcraft-ii-4">
+            <img src="../img/cards/s2-card-4.jpg" class="card-img-top" alt="Starcraft II's Card 4" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Operation Blind Devil</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 4 -->
+          <div class="modal fade" id="starcraft-ii-4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+                    <p>Operation Blind Devil</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/s2-card-4.jpg" alt="Starcraft II's Card 4" />
+                  <p>Separated from the Swarm, a lone zergling must fight to overcome his own nature to defeat his sinister captors. Check out this excerpt, then download Operation Blind Devil by Cassandra Clarke, the final entry in a new series of StarCraft II short stories to celebrate the game's 10th anniversary.</p>
+                  <p>He moves cautiously, claws clicking against the shiny floor. It's cold on his feet, smooth. Strange. It does not feel alive. It's not spongy or warm, like the tissue of the leviathan in which he lives.</p>
+                  <p>He walks in a circle, listening to the click click click. If he goes fast enough, the clicks seem to multiply as if he's out where he's supposed to be, following the Queen of Blades across the nerve center of her leviathan. Did his footsteps sound like hers would? He knows she isn't dead. He can feel her where she's supposed to be: a constant whisper in the back of his thoughts, a running reassurance that he is not alone, even when he is alone.</p>
+                  <p>Other zerglings slide across the walls of this strange round room, following him around and around.</p>
+                  <p>He walks, click, click, click. But aside from his footsteps, there is just emptiness. A strange and hollow thing.</p>
+                  <p>The other zerglings are still behind him and he's angry that he has been trapped here with them so he whirls around and snarls and charges. But he doesn't hit a zergling! He hits a wall that, like the floor, is smooth and shiny. He shakes his head. Growls again. The wall zergling does the same, and he thinks he must have injured it somehow; one of its horns is missing its sharp point.</p>
+                  <p>He scrapes his claws on the floor. The wall zergling does too.</p>
+                  <p>He crouches. So does the wall zergling.</p>
+                  <p>He moves closer to the wall. He feels something snap inside his head. It's like when the Queen of Blades issues a command, and he feels himself turning on, knowing what to do, where to go. Understanding.</p>
+                  <p>He understands something.</p>
+                  <p>That zergling on the wall? It's him.</p>
+                  <p>He's never seen himself before. He's pleased that he looks so much like the rest of his brood: a part of a whole, even though there is no whole in this place. He is alone.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 5 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#starcraft-ii-5">
+            <img src="../img/cards/s2-card-5.jpg" class="card-img-top" alt="Starcraft II's Card 5" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Update - Aug 13, 2020</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 5 -->
+          <div class="modal fade" id="starcraft-ii-5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+                    <p>Update - Aug 13, 2020</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/s2-card-5.jpg" alt="Starcraft II's Card 5" />
+                  <p>Last week we released a community update talking about our thoughts on the state of the game as well as some proposed changes along with our reasoning. As it was released a few hours after the patch notes themselves, we suspect some may have missed these notes, and we urge everyone to check them out before continuing. With that in mind, here are some small adjustments we'd like to make to our initial proposals.</p>
+                  <p>One of the core thoughts we expressed from our last update was as follows:</p>
+                  <p>“…what we hear from many top Protoss players is that the late game unit interactions between the two races are not inherently lopsided, especially after changes to Feedback. (In fact, there are players from both sides who believe it is Protoss favored.) Rather, there's an agreement that the primary problem with late game is the difficulty of getting there on equal footing with the Zerg…”</p>
+                  <p>As our primary goal of this patch is to improve interactions surrounding mid game PvZ, we'd like to further focus our Void Ray changes around those that are targeted towards that stage of the game and thus will be removing the additional increase to movement speed we had initially planned with the Flux Vanes upgrade.</p>
+                  <p class="modal-title">Conclusion</p>
+                  <p>By the time this blog goes up, these changes will have been updated on the Balance Test Mod for players to practice on. Barring bug fixes, these will be the final changes reflected in the next balance patch, which is currently scheduled to be released next week.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 6 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#starcraft-ii-6">
+            <img src="../img/cards/s2-card-6.jpg" class="card-img-top" alt="Hearthstone's Card 6" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>One People, One Purpose</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 6 -->
+          <div class="modal fade" id="starcraft-ii-6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+                    <p>One People, One Purpose</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/s2-card-6.jpg" alt="Starcraft II's Card 6" />
+                  <p>Investigating a strange death among the protoss, High Executor Selendis must face a difficult truth about her people in order to stop an unexpected enemy. Check out this excerpt, then download One People, One Purpose, first in a new series of StarCraft II short stories to celebrate the game's 10th anniversary.</p>
+                  <p>“High Executor, there has been a death.”</p>
+                  <p>Selendis considered the protoss who had spoken, sunk to one knee on the newly replaced stones of the temple square. He wore light armor that looked new in manufacture but old in design, the sort of Golden Age style that had recently come into fashion among some of the Templar—or rather, former Templar. She did not approve of such backward-looking styles; her own armor was just as new, with graceful modern lines that suited her slim build. “Has there been a battle?”</p>
+                  <p>“No, Executor.” Everything about his tone and posture felt wrong; he was uncertain, Selendis could read that much, even without the emotional connection the Khala had once provided. It had been some time after its severing, and still she felt the absence of the telepathic gestalt that had connected the Khalai for millennia—the instantaneous empathy and unified purpose. In its place were new things to navigate: easy deceit, profound loneliness, misinterpretation. It meant, too, teasing out understanding the long way, with questions and body language, a slow and annoying process.</p>
+                  <p>The questions now: Why be uncertain about death, the most certain thing in the universe? If there had been no battle, why disturb her with matters of old age or sickness? The protoss were not immortal and death did not care if their numbers had already been laid low. “Why have you come to me?”</p>
+                  <p>“Because it is a strange death. A wrong one.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FRIENDS -->
+      <section class="friends">
+        <div class="favorites-list">
+          <ion-icon name="star"></ion-icon>
+          <p>Favorites - 3/3</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-2.jpg" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Bajheera</p>
+                <p>Blade's Edge Arena</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-3.jpg" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Kripparrian</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-4.jpg" />
+                <div class="friend-busy"></div>
+              </div>
+              <div class="friend-name">
+                <p>Pilav</p>
+                <p>Busy</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="friends-list">
+          <ion-icon name="people"></ion-icon>
+          <p>Friends - 6/8</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-5.jpg" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Itry</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-6.jpg" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Madvision</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-7.jpg" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Galadar</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-8.jpg" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Nymeria</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-9.jpg" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Fabriroth</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-10.jpg" />
+                <div class="friend-away"></div>
+              </div>
+              <div class="friend-name">
+                <p>Shaie</p>
+                <p>Away</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-11.jpg" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Eversio</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-12.jpg" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Crimson</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

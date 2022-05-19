@@ -1,0 +1,25 @@
+// CAROUSEL
+.carousel {
+  margin: 15px;
+
+  img {
+    border-radius: 5px;
+  }
+
+  .desktop-img {
+    display: block;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  @media (max-width: 660px) {
+    .desktop-img {
+      display: none;
+    }
+    .mobile-img {
+      display: block;
+    }
+  }
+}

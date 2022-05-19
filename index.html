@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fictional Battle.net Web App, All Games Section" />
+    <meta name="keywords" content="All Games, Games, Battle.net, Blizzard" />
+    <meta name="author" content="José Simón Ovando Arriagada" />
+    <title>Battle.net &mdash; All Games</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="layout-all-games">
+      <!-- HEADER -->
+      <header>
+        <!-- HEADER: BATTLE.NET LOGO -->
+        <div class="logo-and-menu">
+          <a href="index.html">
+            <img src="./img/logos/battle-net.png" alt="Battle.net's Logo" />
+          </a>
+        </div>
+        <div class="alerts-and-notifications">
+          <!-- HEADER: ALERTS -->
+          <ion-icon name="alert-circle"></ion-icon>
+          <!-- HEADER: NOTIFICATIONS -->
+          <ion-icon name="notifications"></ion-icon>
+          <!-- HEADER: AVATAR -->
+          <div class="avatar-and-icon">
+            <div class="avatar">
+              <img src="./img/avatars/avatar-1.jpg" alt="User's Avatar" />
+              <div class="online"></div>
+            </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <!-- USER -->
+      <section class="user">
+        <!-- USER: AVATAR -->
+        <div class="avatar-and-icon">
+          <div class="avatar">
+            <img src="./img/avatars/avatar-1.jpg" alt="User's Avatar" />
+            <div class="online"></div>
+          </div>
+          <div class="user-name">
+            <p>Simón</p>
+            <p>Online</p>
+          </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+        <!-- USER: ADD FRIEND, SETTINGS & INPUT -->
+        <div class="user-bar">
+          <div class="add-friend">
+            <ion-icon name="person-add"></ion-icon>
+          </div>
+          <div class="friend-settings">
+            <ion-icon name="settings"></ion-icon>
+          </div>
+          <div class="search-input">
+            <input type="text" name="" id="" />
+            <div class="search">
+              <ion-icon name="search"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NAV -->
+      <nav>
+        <!-- NAV: GAMES -->
+        <div class="games">
+          <!-- NAV: ALL GAMES -->
+          <a class="all-games selected-all-games" href="index.html">
+            <ion-icon name="grid-sharp"></ion-icon>
+            <p>ALL GAMES</p>
+          </a>
+          <!-- NAV: FAVORITE GAMES -->
+          <div class="favorite-games">
+            <a id="hearthstone" href="./html/hearthstone.html">
+              <img src="./img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+            </a>
+            <a href="./html/heroes.html">
+              <img src="./img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+            </a>
+            <a href="./html/reforged.html">
+              <img src="./img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+            </a>
+            <a href="./html/starcraft.html">
+              <img src="./img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+            </a>
+            <a href="./html/warcraft.html">
+              <img src="./img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+            </a>
+            <div class="add-game">
+              <a class="add" href="#">
+                <ion-icon name="add"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- MAIN -->
+      <main>
+        <!-- <h1>ALL GAMES</h1> -->
+        <!-- MAIN: ALERT -->
+        <div class="alerts">
+          <ion-icon name="alert-circle-sharp"></ion-icon>
+          <p>We are performing a scheduled maintenance.</p>
+        </div>
+        <!-- MAIN: CARDS & MODALS -->
+        <section class="cards-all-games">
+          <!-- MAIN: CARD - DIABLO IMMORTAL -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-1">
+            <img src="./img/cards/all-games-card-1.jpg" class="card-img-top" alt="Diablo Immortal's Card" />
+            <div class="new">
+              <p>NEW</p>
+            </div>
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/immortal.svg" alt="Diablo Immortal's Logo" />
+                <p>Diablo Immortal</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - DIABLO IMMORTAL -->
+          <div class="modal fade" id="all-games-modal-1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/immortal.svg" alt="Diablo Immortal's Logo" />
+                    <p>Diablo Immortal</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-1.jpg" alt="Diablo Immortal's Logo" />
+                  <p class="modal-title">Evil Persists</p>
+                  <p>With the Archangel Tyrael presumed dead, and fragments of the shattered Worldstone still tainting the land, the fate of Sanctuary lies in the hands of brave adventurers. You must pledge yourself to the fight—for mankind cannot succumb to the evil of the Burning Hells.</p>
+                  <div class="responsive-iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/C26XZCsuVJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/RtSmAwpVHsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p class="modal-title">Slay Demons Anywhere</p>
+                  <p>In Diablo Immortal, slaying countless demons, acquiring powerful loot, and exploring a nightmarish landscape takes center stage once again in this free-to-play entry to the Diablo franchise. Experience the classic Diablo gameplay you love from anywhere.</p>
+                  <img src="./img/modals/diablo-immortal.jpg" alt="Diablo Immortal's Card" />
+                  <p class="modal-title">A Multiplayer Experience</p>
+                  <p>Hunting demons just became more communal. Forge alliances with other players, working together to purge Sanctuary of evil, in the first massively multiplayer online action role-playing game in Diablo's history.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - HEARTHSTONE -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-2">
+            <img src="./img/cards/all-games-card-2.jpg" class="card-img-top" alt="Hearthstone's Card" />
+            <div class="favorite">
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+                <p>Hearthstone</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - HEARTHSTONE -->
+          <div class="modal fade" id="all-games-modal-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+                    <p>Hearthstone</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-2.jpg" alt="Hearthstone's Card" />
+                  <p class="modal-title">Insanely Fun</p>
+                  <p>Collect powerful cards and create mighty decks. Summon minions and sling a spell to seize control of ever-shifting battlegrounds. Wield a masterful strategy and outwit all players who dare challenge you.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PfmUdCsr1nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">The Warcraft Universe</p>
+                  <p>Go into battle with your favorite Warcraft heroes like Illidan Stormrage, Jaina Proudmore and more. Explore iconic locations from the beloved Warcraft universe as you master your deck, collect cards, and assemble powerful combos, in this fast-paced card game of cunning strategy.</p>
+                  <img src="./img/modals/hearthstone.jpg" alt="Hearthstone's Card" />
+                  <p class="modal-title">You're a Hero</p>
+                  <p>Play as a clever rogue, a powerful mage, or any other of the game's ten hero classes - they're all free!</p>
+                  <a href="#"><p>Remove From Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - CRASH BANDICOOT 4 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-3">
+            <img src="./img/cards/all-games-card-3.jpg" class="card-img-top" alt="Crash Bandicoot 4's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/bandicoot-4.svg" alt="Crash Bandicoot 4's Logo" />
+                <p>Crash Bandicoot 4</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - CRASH BANDICOOT 4 -->
+          <div class="modal fade" id="all-games-modal-3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/bandicoot-4.svg" alt="Crash Bandicoot 4's Logo" />
+                    <p>Crash Bandicoot 4</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-3.jpg" alt="Crash Bandicoot 4's Card" />
+                  <p class="modal-title">It's About Time!</p>
+                  <p>The devious villains Neo Cortex and Dr. N. Tropy have finally escaped their interdimensional prison, leaving an evil scientist sized hole in the universe. They've got their eyes set on not only simply conquering this dimension, but all dimensions, and it's up to Crash and Coco to save the day.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aOGwx3Ju6QQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Bend the Rules of Reality</p>
+                  <p>Crash 4 introduces the quantum masks, the powerful protectors of time and space. Crash and Coco will need their assistance throughout the game to tackle the crazy challenges that are going to be thrown at gameplayers.</p>
+                  <img src="./img/modals/crash-bandicoot-4.jpg" alt="Crash Bandicoot 4's Card" />
+                  <p class="modal-title">Embrace It</p>
+                  <p>Crash Bandicoot games are about finding new and interesting ways to play through the adventure. While you can switch between playing as Crash or Coco throughout this game, you'll also get some fresh perspectives and new gameplay from alternate timeline paths.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - WORLD OF WARCRAFT: CLASSIC -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-4">
+            <img src="./img/cards/all-games-card-4.jpg" class="card-img-top" alt="World of Warcraft: Classic's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/classic.svg" alt="World of Warcraft: Classic's Logo" />
+                <p>World of Warcraft: Classic</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - WORLD OF WARCRAFT: CLASSIC -->
+          <div class="modal fade" id="all-games-modal-4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/classic.svg" alt="World of Warcraft: Classic's Logo" />
+                    <p>World of Warcraft: Classic</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-4.jpg" alt="World of Warcraft: Classic's Card" />
+                  <p class="modal-title">Back to Outland</p>
+                  <p>Enter the Twisting Nether and explore Outland—the shattered remains of the once beautiful orc homeworld, Draenor. Ride majestic flying mounts and master two additional races: the blood elves and the draenei.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oP9eGesY45M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Beyond the Dark Portal</p>
+                  <p>Now a dark frontier awaits you beyond the Dark Portal. Return to a lost era of Azeroth and enjoy the timeless stories that defined this world at war.</p>
+                  <img src="./img/modals/wow-classic.jpg" alt="World of Warcraft: Classic's Card" />
+                  <p class="modal-title">Force The Hand of Fate</p>
+                  <p>With the release of Burning Crusade Classic, new realm types will be added to WoW® Classic. If you already have characters on WoW Classic, you'll have to choose what path your characters will take going forward.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - CALL OF DUTY: BLACK OPS 4 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-5">
+            <img src="./img/cards/all-games-card-5.jpg" class="card-img-top" alt="Call of Duty: Black Ops 4's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/call-of-duty.svg" alt="Call of Duty: Black Ops 4's Logo" />
+                <p>Call of Duty: Black Ops 4</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - CALL OF DUTY: BLACK OPS 4 -->
+          <div class="modal fade" id="all-games-modal-5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/call-of-duty.svg" alt="Call of Duty: Black Ops 4's Logo" />
+                    <p>Call of Duty: Black Ops 4</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-5.jpg" alt="Call of Duty: Black Ops 4's Card" />
+                  <p class="modal-title">Bold Innovations</p>
+                  <p>Call of Duty® has reinvented itself many times now since the series began as a bombastic, linear single-player World War 2 shooter. Each passing year has brought innovation, experimentation and refinement - but rarely such bold departures or additions as Call of Duty®: Black Ops 4.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6kqe2ICmTxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Blackout</p>
+                  <p>The Black Ops universe comes to life in one massive battle royale experience, combining Black Ops signature combat and the biggest map in Call of Duty history. Play as fan favorite characters and battle through iconic settings in an all-out survival and elimination experience.</p>
+                  <img src="./img/modals/cod-black-ops-4.jpg" alt="Call of Duty: Black Ops 4's Card" />
+                  <p class="modal-title">Multiplayer</p>
+                  <p>Multiplayer raises the bar, delivering the most thrilling grounded combat experience yet with a focus on tactical gameplay and player choice.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - WORLD OF WARCRAFT -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-6">
+            <img src="./img/cards/all-games-card-6.jpg" class="card-img-top" alt="World of Warcraft's Card" />
+            <div class="favorite">
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+                <p>World of Warcraft</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - WORLD OF WARCRAFT -->
+          <div class="modal fade" id="all-games-modal-6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+                    <p>World of Warcraft</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-6.jpg" alt="World of Warcraft's Card" />
+                  <p class="modal-title">Brave the Beyond</p>
+                  <p>With a single act of destruction, Sylvanas Windrunner has ripped open the way to the afterlife. Azeroth's staunchest defenders have been dragged into all-consuming darkness. An ancient force of death threatens to break its bonds and unravel reality.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/s4gBChg6AII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">The Shadowlands</p>
+                  <p>What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived. Journey through planes of torment and imprisonment to those of rebirth and eternal reward.</p>
+                  <img src="./img/modals/wow-shadowlands.jpg" alt="World of Warcraft's Card" />
+                  <p class="modal-title">Covenants</p>
+                  <p>Align yourself with one of four Covenants—mysterious sects, each with their own ambition for the Shadowlands—to restore balance to the hereafter.</p>
+                  <a href="#"><p>Remove From Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - STARCRAFT II -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-7">
+            <img src="./img/cards/all-games-card-7.jpg" class="card-img-top" alt="Starcraft II's Card" />
+            <div class="favorite">
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+                <p>Starcraft II</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - STARCRAFT II -->
+          <div class="modal fade" id="all-games-modal-7" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+                    <p>Starcraft II</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-7.jpg" alt="Starcraft II's Card" />
+                  <p class="modal-title">Macro and micro</p>
+                  <p>In StarCraft II, players juggle big-picture economy and micro-level unit control, pushing them to the very limits of their strategic and tactical capabilities.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MVbeoSPqRs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Which side will you choose?</p>
+                  <p>Each of StarCraft II's three races has its own fascinating personality and playstyle, with a varied and distinct suite of specialized units and buildings.</p>
+                  <img src="./img/modals/starcraft-ii.jpg" alt="Starcraft II's Card" />
+                  <p class="modal-title">Four ways to play</p>
+                  <p>Whether you prefer a cinematic story campaign, best-in-class multiplayer competition, specialized custom games in the Arcade, or social and collaborative Co-op, StarCraft II has a mode for you.</p>
+                  <a href="#"><p>Remove From Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - DIABLO II: RESURRECTED -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-8">
+            <img src="./img/cards/all-games-card-8.jpg" class="card-img-top" alt="Starcraft II's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/diablo-ii.svg" alt="Diablo II: Resurrected's Logo" />
+                <p>Diablo II: Resurrected</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - DIABLO II: RESURRECTED -->
+          <div class="modal fade" id="all-games-modal-8" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/diablo-ii.svg" alt="Diablo II: Resurrected's Logo" />
+                    <p>Diablo II: Resurrected</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-8.jpg" alt="Diablo II: Resurrected's Card" />
+                  <p class="modal-title">A Timeless Classic</p>
+                  <p>Diablo® II: Resurrected™ is a remastered version of the quintessential action RPG Diablo® II. Pursue the mysterious Dark Wanderer and fight the denizens of hell as you uncover the fate of the Prime Evils Diablo, Mephisto, and Baal, now in up to 4K (2160p) resolution on PC.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W41NvIgeKX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">The Lord of Destruction</p>
+                  <p>Battle your way through icy caverns, horrific tombs filled with undead abominations, and frozen wastelands to the frigid summit of Mount Arreat and stop Baal, the Lord of Destruction. Raise hell with two Lord of Destruction playable classes—the cunning Assassin, master of traps and shadow disciplines, and the savage Druid, a bold shapeshifter and summoner who commands primal elemental magic.</p>
+                  <img src="./img/modals/diablo-ii-resurrected.jpg" alt="Diablo II: Resurrected's Card" />
+                  <p class="modal-title">Bring Your Own Army</p>
+                  <p>Diablo II: Resurrected features cooperative gameplay supporting up to eight players, and each player also has access to one mercenary. The minions of the Burning Hells may grow stronger, but they'll be no match for you!</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - CALL OF DUTY: BLACK OPS COLD WAR -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-9">
+            <img src="./img/cards/all-games-card-9.jpg" class="card-img-top" alt="Call of Duty: Black Ops Cold War's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/black-ops.svg" alt="Call of Duty: Black Ops Cold War's Logo" />
+                <p>Call of Duty: Black Ops Cold War</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - CALL OF DUTY: BLACK OPS COLD WAR -->
+          <div class="modal fade" id="all-games-modal-9" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/black-ops.svg" alt="Call of Duty: Black Ops Cold War's Logo" />
+                    <p>Call of Duty: Black Ops Cold War</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-9.jpg" alt="Call of Duty: Black Ops Cold War's Card" />
+                  <p class="modal-title">Campaign</p>
+                  <p>Nothing is ever as it seems, as Raven Software brings a gripping single-player Campaign where players will come face-to-face with historical figures and hard truths, as they battle around the globe through iconic locales like East Berlin, Vietnam, Turkey, and more.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/h9ef9zeiiqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Zombies</p>
+                  <p>Black Ops Cold War Zombies is set to take veterans and newcomers alike on a bold and terrifying journey that expands on an iconic part of the Call of Duty franchise. This co-op mode includes new ways to progress, classic Perks, and an arsenal of Cold War-era Zombies weaponry that will help survivors dominate the legions of undead.</p>
+                  <img src="./img/modals/cod-black-ops-cold-war.jpg" alt="Call of Duty: Black Ops Cold War's Card" />
+                  <p class="modal-title">Multiplayer</p>
+                  <p>The next chapter of the iconic Black Ops Multiplayer experience is here, defined by signature combat, deniable operations, and a connected experience across platforms and generations.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - DIABLO III -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-10">
+            <img src="./img/cards/all-games-card-10.jpg" class="card-img-top" alt="Diablo III's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/diablo-iii.svg" alt="Diablo III's Logo" />
+                <p>Diablo III</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - DIABLO III -->
+          <div class="modal fade" id="all-games-modal-10" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/diablo-iii.svg" alt="Diablo III's Logo" />
+                    <p>Diablo III</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-10.jpg" alt="Diablo III's Card" />
+                  <p class="modal-title">Skill Runes</p>
+                  <p>In Diablo III, runes give you unprecedented control over your skills and powers, changing elemental damage types, accuracy, and area of effect; adding new debilitating effects like slows and stuns; and even altering the nature and appearance of your abilities.</p>
+                  <div class="responsive-iframe">
+                    <iframe src="https://www.youtube.com/embed/M2TpNQhfkp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Followers</p>
+                  <p>Sometimes a hero needs a helping hand. Followers, champions brave enough to join you in battle against the Burning Hells, are similar to Henchmen in that they can be outfitted with relevant arms and armor, but they're upgradable with their own skills, allowing you to customize how they fight and what passive benefits they convey. They're also fleshed-out personalities in their own right.</p>
+                  <img src="./img/modals/diablo-iii.jpg" alt="Diablo III's Card" />
+                  <p class="modal-title">Crafting & Artisans</p>
+                  <p>Some of the world's most talented craftsmen will sign on to travel with you. These artisans are capable of putting the materials you'll find in the wilderness or salvage from unneeded items to good use, hammering out customized suits of armor or combining gems to unlock their powers.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - CALL OF DUTY: WARZONE -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-11">
+            <img src="./img/cards/all-games-card-11.jpg" class="card-img-top" alt="Call of Duty: Warzone's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/warzone.svg" alt="Call of Duty: Warzone's Logo" />
+                <p>Call of Duty: Warzone</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - CALL OF DUTY: WARZONE -->
+          <div class="modal fade" id="all-games-modal-11" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/warzone.svg" alt="Call of Duty: Warzone's Logo" />
+                    <p>Call of Duty: Warzone</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-11.jpg" alt="Call of Duty: Warzone's Card" />
+                  <p class="modal-title">It's Cross-Platform</p>
+                  <p>Call of Duty: Warzone supports cross-platform play. That means you'll be able to play with your friends, regardless of what platform they are playing the game on.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ljLBEbAKkvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">The Map is Huge</p>
+                  <p>Warzone is going to take us down to Verdansk, a dense and expansive city that's sure to be larger than any single space developer Infinity Ward has engineered in the past. The Call of Duty: Warzone map features over 300 points of interest, multiple named zones, and a slew of distinct landmarks to help you and your teammates navigate the urban and rural areas with ease.</p>
+                  <img src="./img/modals/cod-warzone.jpg" alt="Call of Duty: Warzone's Card" />
+                  <p class="modal-title">All Unique Buildings</p>
+                  <p>Given how bloody massive Verdansk is, it might all seem a little daunting, right? Infinity Ward has gone to great lengths to make the map feel unique - each landmark and structure has been hand-crafted - but you needn't worry about watching every window. For buildings over seven stories tall, you'll only need to worry about enemies shooting down at you from the first floor and roof levels - this is also where loot will spawn inside.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - HEROES OF THE STORM -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-12">
+            <img src="./img/cards/all-games-card-12.jpg" class="card-img-top" alt="Heroes of the Storm's Card" />
+            <div class="favorite">
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+                <p>Heroes of the Storm</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - HEROES OF THE STORM -->
+          <div class="modal fade" id="all-games-modal-12" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+                    <p>Heroes of the Storm</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-12.jpg" alt="Heroes of the Storm's Card" />
+                  <p class="modal-title">Hero Selection and Roles</p>
+                  <p>The Nexus has gathered many of the bravest and most heroic characters from across Blizzard's game universes, and more still are being called to serve. Whether you favor the heroes of the Warcraft, StarCraft, Diablo, or Overwatch universes, you'll find epic characters.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0ecv0bT9DEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Rise Together</p>
+                  <p>For a team to be effective, its members will need to act as one. The leveling in Heroes of the Storm reflects this philosophy, with each player contributing to a shared pool of experience. Team experience makes it easier to make rotations without losing the lane, and ensures you're not fighting with teammates over gold and experience.</p>
+                  <img src="./img/modals/heroes-of-the-storm.jpg" alt="Heroes of the Storm's Card" />
+                  <p class="modal-title">The Talent System</p>
+                  <p>Every Hero has their own diverse kit of skills and abilities that you will be able to choose from as your team advances. Starting at level 1, every few levels your team earns will present you with a set of talent choices that offer new tools or enhance your existing abilities.</p>
+                  <a href="#"><p>Remove From Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - CALL OF DUTY: VANGUARD -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-13">
+            <img src="./img/cards/all-games-card-13.jpg" class="card-img-top" alt="Call of Duty: Vanguard's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/vanguard.svg" alt="Call of Duty: Vanguard's Logo" />
+                <p>Call of Duty: Vanguard</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - CALL OF DUTY: VANGUARD -->
+          <div class="modal fade" id="all-games-modal-13" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/vanguard.svg" alt="Call of Duty: Vanguard's Logo" />
+                    <p>Call of Duty: Vanguard</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-13.jpg" alt="Call of Duty: Vanguard's Card" />
+                  <p class="modal-title">A Fight in All Front</p>
+                  <p>End Project Phoenix and relive the heroic moments of Task Force One, a multinational group of heroes including Arthur Kingsley, Polina Petrova, Wade Jackson, Lucas Riggs, and many others united in the fight against evil.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OQ1CwPhE8KQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Special Forces</p>
+                  <p>Campaign should be the first stop for those who are new to Call of Duty, looking to brush up on skills, or be introduced to the game's universe.</p>
+                  <img src="./img/modals/cod-vanguard.jpg" alt="Call of Duty: Vanguard's Card" />
+                  <p class="modal-title">Test Your Abilities</p>
+                  <p>Choose from Recruit, Regular, Hardened, or Veteran difficulty settings, with both in-game and platform-based rewards granted for your achievements.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - WARCRAFT III: REFORGED -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-14">
+            <img src="./img/cards/all-games-card-14.jpg" class="card-img-top" alt="Warcraft III: Reforged's Card" />
+            <div class="favorite">
+              <ion-icon name="star"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+                <p>Warcraft III: Reforged</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - WARCRAFT III: REFORGED -->
+          <div class="modal fade" id="all-games-modal-14" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+                    <p>Warcraft III: Reforged</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-14.jpg" alt="Warcraft III: Reforged's Card" />
+                  <p class="modal-title">Azeroth, Born Anew</p>
+                  <p>Integrating cutting-edge modeling and rendering, we've rebuilt every hero, unit, building, and environment from the ground up. You've never seen Azeroth like this.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c1CvhTWQQaw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">The Origin Stories</p>
+                  <p>Relive the events of Warcraft III: Reign of Chaos and The Frozen Throne. Command mysterious night elves, insidious undead, savage orcs, and noble humans as alliances shift and cultures clash in ruthless conflict.</p>
+                  <img src="./img/modals/warcraft-iii-reforged.jpg" alt="Warcraft III: Reforged's Card" />
+                  <p class="modal-title">Reign of Chaos</p>
+                  <p>Humans, orcs, and night elves must stand together against the Burning Legion and their armies of undead. Witness the tragedy of Arthas Menethil and the redemption of the Horde in this sprawling chapter of Warcraft's epic history.</p>
+                  <a href="#"><p>Remove From Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - STARCRAFT -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-15">
+            <img src="./img/cards/all-games-card-15.jpg" class="card-img-top" alt="Starcraft's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/starcraft.svg" alt="Starcraft's Logo" />
+                <p>Starcraft</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - STARCRAFT -->
+          <div class="modal fade" id="all-games-modal-15" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/starcraft.svg" alt="Starcraft's Logo" />
+                    <p>Starcraft</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-15.jpg" alt="Starcraft's Card" />
+                  <p class="modal-title">Rediscover a Classic</p>
+                  <p>We've remastered our units, buildings, and environments, improved game audio, and broadened our supported resolutions. Illustrated interludes bring the struggles and victories of heroes like Artanis, Fenix, Tassadar, Raynor and Kerrigan to life like never before.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1BzNM2pyzW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Real-Time Strategy</p>
+                  <p>Command the mechanized Terrans, psi-powered Protoss, and insectoid Zerg as they vie for map control of eight unique environments. Build your base and conscript your army in a real-time, military sci-fi vision of the future.</p>
+                  <img src="./img/modals/starcraft.jpg" alt="Starcraft's Card" />
+                  <p class="modal-title">The Koprulu Sector</p>
+                  <p>Three races—the Earth-expat Terrans, the psionic Protoss warriors, and the world-devouring Zerg—encounter each other for the first time, beginning a conflict that spans worlds (and more than 50 missions).</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - CALL OF DUTY: MODERN WARFARE 2 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-16">
+            <img src="./img/cards/all-games-card-16.jpg" class="card-img-top" alt="Call of Duty: Modern Warfare 2's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/warfare-ii.svg" alt="Call of Duty: Modern Warfare 2's Logo" />
+                <p>Call of Duty: Modern Warfare 2</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - CALL OF DUTY: MODERN WARFARE 2 -->
+          <div class="modal fade" id="all-games-modal-16" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/warfare-ii.svg" alt="Call of Duty: Modern Warfare 2's Logo" />
+                    <p>Call of Duty: Modern Warfare 2</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-16.jpg" alt="Call of Duty: Modern Warfare 2's Card" />
+                  <p class="modal-title">Most Played</p>
+                  <p>The most-anticipated game of the year and the sequel to the best-selling first-person action game of all time, Modern Warfare 2 continues the gripping and heart-racing action as players face off against a new threat dedicated to bringing the world to the brink of collapse.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/x993FRC4rXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Co-Operative</p>
+                  <p>An entirely new gameplay mode which supports 2-player co-operative play online that is unique from the single player story campaign.</p>
+                  <img src="./img/modals/cod-modern-warfare-2.jpg" alt="Call of Duty: Modern Warfare 2's Card" />
+                  <p class="modal-title">Multiplayer Reinvented</p>
+                  <p>Setting a new bar for online multiplayer, Modern Warfare 2 multiplayer delivers new capabilities, customization, gamestates and modes.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - CALL OF DUTY: MODERN WARFARE -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-17">
+            <img src="./img/cards/all-games-card-17.jpg" class="card-img-top" alt="Call of Duty: Modern Warfare's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/warfare.svg" alt="Call of Duty: Modern Warfare's Logo" />
+                <p>Call of Duty: Modern Warfare</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - CALL OF DUTY: MODERN WARFARE -->
+          <div class="modal fade" id="all-games-modal-17" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/warfare.svg" alt="Call of Duty: Modern Warfare's Logo" />
+                    <p>Call of Duty: Modern Warfare</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-17.jpg" alt="Call of Duty: Modern Warfare's Card" />
+                  <p class="modal-title">Refined Shooting</p>
+                  <p>Developer Infinity Ward has worked hard to ensure Modern Warfare's weapons feel authentic while also being fun to use. For example, you can now reload while aiming down sights, keeping you focused on the fight at all times.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bH1lHCirCGI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Realistic Physics</p>
+                  <p>The feel of Modern Warfare's arsenal is more authentic than ever - your weapons bob and sway with real weight as you traverse the map, and most replicate the same unique recoil patterns of their real-world counterparts.</p>
+                  <img src="./img/modals/cod-modern-warfare.jpg" alt="Call of Duty: Modern Warfare's Card" />
+                  <p class="modal-title">Deep Customization</p>
+                  <p>Modern Warfare features the most customizable firearms of any Call of Duty game, with each one offering up to 60 possible attachment configurations, depending on the weapon type.</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD - BLIZZARD ARCADE -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#all-games-modal-18">
+            <img src="./img/cards/all-games-card-18.jpg" class="card-img-top" alt="Blizzard Arcade's Card" />
+            <div class="favorite">
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+            <div class="card-body">
+              <div class="logo-and-text">
+                <img src="./img/logos/blizzard-arcade.svg" alt="Blizzard Arcade's Logo" />
+                <p>Blizzard Arcade</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL - BLIZZARD ARCADE -->
+          <div class="modal fade" id="all-games-modal-18" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="./img/logos/blizzard-arcade.svg" alt="Call of Duty: Modern Warfare's Logo" />
+                    <p>Blizzard Arcade</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="./img/cards/all-games-card-18.jpg" alt="Blizzard Arcade's Card" />
+                  <p class="modal-title">The Green Flag Drops!</p>
+                  <p>The Blizzard Arcade Collection includes The Lost Vikings, Rock n' Roll Racing, and Blackthorne. Three 16-bit titles in a $20 package? That's Nintendo levels of greedy! Blizzard may have only included three different titles in this collection, but there are multiple iterations of each title included in here.</p>
+                  <div class="responsive-iframe">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LlODb6uMtiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                  <p class="modal-title">Aged Remarkably Well</p>
+                  <p>This version features a brand new 16:9 aspect ratio, massively improved visuals (while still retaining its classic 16-bit looks), a brand new UI, additional voice clips, and a new soundtrack.</p>
+                  <img src="./img/modals/blizzard-arcade.jpg" alt="Blizzard Arcade's Card" />
+                  <p class="modal-title">Rock n' Roll Racing</p>
+                  <p>This is a work of love, a fantastic tribute to one of the most iconic developers of the past thirty years and their iconic early titles. This is Rare Replay levels of excellent, one of the best retro collections you can find in the market. Honestly, the definitive edition of Rock n' Roll Racing is worth the admission ticket alone!</p>
+                  <a href="#"><p>Add To Favorites</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FRIENDS -->
+      <section class="friends">
+        <div class="favorites-list">
+          <ion-icon name="star"></ion-icon>
+          <p>Favorites - 3/3</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-2.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Bajheera</p>
+                <p>Blade's Edge Arena</p>
+              </div>
+            </div>
+            <img src="./img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-3.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Kripparrian</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="./img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-4.jpg" alt="Friend's Avatar" />
+                <div class="friend-busy"></div>
+              </div>
+              <div class="friend-name">
+                <p>Pilav</p>
+                <p>Busy</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="friends-list">
+          <ion-icon name="people"></ion-icon>
+          <p>Friends - 6/8</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-5.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Itry</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="./img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-6.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Madvision</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="./img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-7.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Galadar</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="./img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-8.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Nymeria</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="./img/logos/reforged.svg" alt="Overwatch's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-9.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Fabriroth</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="./img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="./img/avatars/avatar-10.jpg" alt="Friend's Avatar" />
+                <div class="friend-away"></div>
+              </div>
+              <div class="friend-name">
+                <p>Shaie</p>
+                <p>Away</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="./img/avatars/avatar-11.jpg" alt="Friend's Avatar" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Eversio</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="./img/avatars/avatar-12.jpg" alt="Friend's Avatar" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Crimson</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

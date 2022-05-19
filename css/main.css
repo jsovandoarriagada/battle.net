@@ -1,0 +1,836 @@
+/* RESET */
+* {
+  box-sizing: border-box; }
+
+html,
+body,
+div,
+section,
+figure,
+p,
+a,
+img,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+ul {
+  list-style: none; }
+
+li {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+/* GENERAL */
+body {
+  font-family: "Rubik", sans-serif;
+  text-shadow: 1.2px 1.2px #000000;
+  background-color: #15171e;
+  color: #ffffff;
+  font-size: 16px; }
+  body ::-webkit-scrollbar {
+    width: 8px;
+    height: auto; }
+  body ::-webkit-scrollbar-thumb {
+    background-color: #23252b;
+    border-radius: 5px; }
+
+/* GRID*/
+.layout-all-games,
+.layout-games {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 320px auto 320px;
+  grid-template-rows: 70px 70px auto; }
+  .layout-all-games header,
+  .layout-games header {
+    grid-area: header; }
+  .layout-all-games nav,
+  .layout-games nav {
+    grid-area: nav; }
+  .layout-all-games main,
+  .layout-games main {
+    grid-area: main;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .layout-all-games .action,
+  .layout-games .action {
+    grid-area: action; }
+  .layout-all-games .user,
+  .layout-games .user {
+    grid-area: user; }
+  @media (max-width: 1366px) {
+    .layout-all-games .user,
+    .layout-all-games .friends,
+    .layout-games .user,
+    .layout-games .friends {
+      display: none; } }
+  .layout-all-games .friends,
+  .layout-games .friends {
+    grid-area: friends;
+    overflow-x: hidden;
+    overflow-y: auto; }
+
+.layout-all-games {
+  grid-template-areas: "header header user" "nav nav user" "main main friends"; }
+
+.layout-games {
+  grid-template-areas: "header header user" "nav nav user" "action main friends"; }
+  @media (max-width: 980px) {
+    .layout-games .action {
+      display: none; } }
+
+@media (max-width: 1366px) {
+  .layout-all-games,
+  .layout-games {
+    grid-template-columns: 320px auto;
+    grid-template-rows: 70px 70px auto; }
+  .layout-all-games {
+    grid-template-areas: "header header" "nav nav" "main main"; }
+  .layout-games {
+    grid-template-areas: "header header" "nav nav" "action main"; } }
+
+@media (max-width: 980px) {
+  .layout-games {
+    grid-template-areas: "header" "nav" "main";
+    grid-template-columns: auto;
+    grid-template-rows: 70px 70px auto; } }
+
+@media (max-width: 480px) {
+  .layout-all-games,
+  .layout-games {
+    grid-template-rows: 60px 60px auto; } }
+
+/* HEADER */
+header .alerts-and-notifications .avatar-and-icon .avatar .online, .user .avatar-and-icon .avatar .online, .friends ul li .friends-avatar .friend-avatar .friend-online, .friends ul li .friends-avatar .friend-avatar .friend-busy, .friends ul li .friends-avatar .friend-avatar .friend-away, .friends ul li .friends-avatar .friend-avatar .friend-offline {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid #333333; }
+
+.cards-all-games .card .new,
+.cards-games .card .new, .cards-all-games .card .favorite,
+.cards-games .card .favorite {
+  position: absolute;
+  top: 0%; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 97.5%;
+  height: auto;
+  margin: 0 auto; }
+  header .logo-and-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 0; }
+    header .logo-and-menu a {
+      cursor: pointer; }
+      header .logo-and-menu a img {
+        width: auto;
+        height: 50px;
+        filter: drop-shadow(1px 1px #000000); }
+      @media (max-width: 480px) {
+        header .logo-and-menu a img {
+          width: auto;
+          height: 40px; } }
+  header ion-icon {
+    cursor: pointer;
+    font-size: 22px; }
+  header .alerts-and-notifications {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; }
+    header .alerts-and-notifications ion-icon[name="alert-circle"] {
+      color: #ffb400; }
+    header .alerts-and-notifications .avatar-and-icon {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 80px;
+      display: none; }
+      header .alerts-and-notifications .avatar-and-icon .avatar {
+        position: relative; }
+        header .alerts-and-notifications .avatar-and-icon .avatar .online {
+          left: 35px;
+          top: 35px;
+          padding: 7px;
+          background-color: #6cdb00; }
+        @media (max-width: 480px) {
+          header .alerts-and-notifications .avatar-and-icon .avatar .online {
+            left: 28px;
+            top: 28px;
+            padding: 6px; } }
+        header .alerts-and-notifications .avatar-and-icon .avatar img {
+          width: auto;
+          height: 50px;
+          border-radius: 50%; }
+        @media (max-width: 480px) {
+          header .alerts-and-notifications .avatar-and-icon .avatar img {
+            width: auto;
+            height: 40px; } }
+      header .alerts-and-notifications .avatar-and-icon .user-name {
+        display: flex;
+        flex-direction: column;
+        gap: 0; }
+      header .alerts-and-notifications .avatar-and-icon ion-icon {
+        filter: drop-shadow(1px 1px #000000);
+        color: #ffffff;
+        font-size: 16px; }
+    @media (max-width: 1366px) {
+      header .alerts-and-notifications .avatar-and-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 5px; } }
+  @media (max-width: 1366px) {
+    header .alerts-and-notifications ion-icon[name="alert-circle"],
+    header .alerts-and-notifications ion-icon[name="notifications"] {
+      display: none; } }
+
+/* USER */
+header .alerts-and-notifications .avatar-and-icon .avatar .online, .user .avatar-and-icon .avatar .online, .friends ul li .friends-avatar .friend-avatar .friend-online, .friends ul li .friends-avatar .friend-avatar .friend-busy, .friends ul li .friends-avatar .friend-avatar .friend-away, .friends ul li .friends-avatar .friend-avatar .friend-offline {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid #333333; }
+
+.cards-all-games .card .new,
+.cards-games .card .new, .cards-all-games .card .favorite,
+.cards-games .card .favorite {
+  position: absolute;
+  top: 0%; }
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: start;
+  cursor: pointer;
+  margin-left: 15px; }
+  .user .avatar-and-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 80px; }
+    .user .avatar-and-icon .avatar {
+      position: relative; }
+      .user .avatar-and-icon .avatar .online {
+        left: 35px;
+        top: 35px;
+        padding: 7px;
+        background-color: #6cdb00; }
+      .user .avatar-and-icon .avatar img {
+        width: auto;
+        height: 50px;
+        border-radius: 50%; }
+    .user .avatar-and-icon .user-name {
+      display: flex;
+      flex-direction: column;
+      gap: 0; }
+      .user .avatar-and-icon .user-name p:nth-child(1) {
+        color: #77c9ff; }
+    @media (max-width: 1366px) {
+      .user .avatar-and-icon .user-name {
+        display: none; } }
+    .user .avatar-and-icon ion-icon {
+      filter: drop-shadow(1px 1px #000000);
+      color: #ffffff;
+      font-size: 16px; }
+  .user .user-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 80px;
+    color: #b3b3b3; }
+    .user .user-bar .add-friend {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: #23252b;
+      border-radius: 5px; }
+      .user .user-bar .add-friend:hover {
+        background-color: #313339;
+        color: #ffffff; }
+      .user .user-bar .add-friend ion-icon {
+        font-size: 22px; }
+    .user .user-bar .friend-settings {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: #23252b;
+      border-radius: 5px; }
+      .user .user-bar .friend-settings:hover {
+        background-color: #313339;
+        color: #ffffff; }
+      .user .user-bar .friend-settings ion-icon {
+        font-size: 22px; }
+    .user .user-bar .search-input {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 40px;
+      background-color: #23252b;
+      border-radius: 5px; }
+      .user .user-bar .search-input:hover {
+        background-color: #313339;
+        color: #ffffff; }
+      .user .user-bar .search-input input {
+        width: 160px;
+        height: 40px;
+        color: #ffffff;
+        padding-left: 10px;
+        background: none;
+        outline: none;
+        border: none; }
+      .user .user-bar .search-input .search {
+        width: 40px;
+        height: auto;
+        padding-top: 5px; }
+        .user .user-bar .search-input .search ion-icon {
+          font-size: 22px; }
+
+/* NAV */
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: center; }
+  nav .games {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 97.5%;
+    height: 60px;
+    border-radius: 5px; }
+    nav .games .all-games {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 60px;
+      cursor: pointer;
+      background-color: #23252b;
+      border-radius: 5px;
+      color: #b3b3b3; }
+      nav .games .all-games:hover {
+        background-color: #313339;
+        color: #ffffff; }
+      nav .games .all-games ion-icon {
+        font-size: 22px; }
+      nav .games .all-games p {
+        font-weight: 500; }
+    @media (max-width: 980px) {
+      nav .games .all-games {
+        width: 70px;
+        height: 60px; }
+        nav .games .all-games p {
+          display: none; } }
+    @media (max-width: 480px) {
+      nav .games .all-games {
+        width: 60px;
+        height: 50px; }
+        nav .games .all-games ion-icon {
+          font-size: 22px; } }
+    nav .games .favorite-games {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #23252b;
+      border-radius: 5px; }
+      nav .games .favorite-games a {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        cursor: pointer; }
+        nav .games .favorite-games a img {
+          width: auto;
+          height: 40px; }
+        @media (max-width: 480px) {
+          nav .games .favorite-games a img {
+            width: auto;
+            height: 30px; } }
+        nav .games .favorite-games a:hover {
+          background-color: #313339; }
+      @media (max-width: 480px) {
+        nav .games .favorite-games a {
+          width: 50px;
+          height: 50px; } }
+      nav .games .favorite-games #hearthstone:hover {
+        border-radius: 5px 0 0 5px; }
+      nav .games .favorite-games .add-game {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px; }
+      @media (max-width: 480px) {
+        nav .games .favorite-games .add-game {
+          width: 50px;
+          height: 50px; } }
+      nav .games .favorite-games .add {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #313339;
+        color: #b3b3b3;
+        border-radius: 50%;
+        font-size: 22px; }
+        nav .games .favorite-games .add:hover {
+          color: #ffffff; }
+      @media (max-width: 480px) {
+        nav .games .favorite-games .add {
+          width: 30px;
+          height: 30px; } }
+    @media (max-width: 480px) {
+      nav .games .games-list {
+        width: 100%;
+        height: 50px; } }
+    nav .games .selected-all-games {
+      background-color: #313339;
+      color: #ffffff;
+      border-radius: 5px; }
+    nav .games .selected-hearthstone {
+      background-color: #313339;
+      border-radius: 5px 0 0 5px; }
+    nav .games .selected {
+      background-color: #313339; }
+  @media (max-width: 480px) {
+    nav .games-list {
+      width: 100%;
+      height: 50px; } }
+
+/* ACTION */
+.action {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15% 2.5%;
+  color: #b3b3b3; }
+  .action .logo-and-options {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    height: auto; }
+    .action .logo-and-options figure {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;
+      align-items: center; }
+      .action .logo-and-options figure img {
+        width: auto;
+        height: 71px; }
+    .action .logo-and-options ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      .action .logo-and-options ul li {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: start;
+        align-items: center;
+        width: 97.5%;
+        height: auto;
+        align-self: flex-end; }
+        .action .logo-and-options ul li:hover {
+          color: #ffffff; }
+        .action .logo-and-options ul li ion-icon {
+          font-size: 22px; }
+  .action .action-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; }
+    .action .action-box .installated {
+      display: flex;
+      flex-direction: row;
+      gap: 3px;
+      font-size: 12px; }
+      .action .action-box .installated a {
+        color: #b3b3b3; }
+        .action .action-box .installated a:hover {
+          color: #ffffff; }
+    .action .action-box .game-version {
+      font-weight: bold; }
+    .action .action-box .version-and-region {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      width: 280px;
+      height: auto;
+      color: #b3b3b3; }
+      .action .action-box .version-and-region .version {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        background-color: #23252b;
+        border-radius: 5px;
+        padding: 0 10px; }
+        .action .action-box .version-and-region .version:hover {
+          background-color: #313339;
+          color: #ffffff; }
+        .action .action-box .version-and-region .version ion-icon {
+          font-size: 16px; }
+      .action .action-box .version-and-region .region {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 40px;
+        background-color: #23252b;
+        border-radius: 5px; }
+        .action .action-box .version-and-region .region:hover {
+          background-color: #313339;
+          color: #ffffff; }
+        .action .action-box .version-and-region .region ion-icon {
+          font-size: 22px; }
+    .action .action-box a {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      text-shadow: none; }
+      .action .action-box a p {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 60px;
+        background-color: #0082b8;
+        color: #ffffff;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 20px; }
+        .action .action-box a p:hover {
+          background-color: #00a2e6; }
+
+/* MAIN */
+.alerts {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  width: auto;
+  height: 60px;
+  background-color: #ffb400;
+  color: #15171e;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-shadow: none;
+  margin: 15px; }
+  .alerts ion-icon {
+    font-size: 22px; }
+
+@media (max-width: 480px) {
+  .alerts {
+    display: none; } }
+
+.carousel {
+  margin: 15px; }
+  .carousel img {
+    border-radius: 5px; }
+  .carousel .desktop-img {
+    display: block; }
+  .carousel .mobile-img {
+    display: none; }
+  @media (max-width: 660px) {
+    .carousel .desktop-img {
+      display: none; }
+    .carousel .mobile-img {
+      display: block; } }
+
+header .alerts-and-notifications .avatar-and-icon .avatar .online, .user .avatar-and-icon .avatar .online, .friends ul li .friends-avatar .friend-avatar .friend-online, .friends ul li .friends-avatar .friend-avatar .friend-busy, .friends ul li .friends-avatar .friend-avatar .friend-away, .friends ul li .friends-avatar .friend-avatar .friend-offline {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid #333333; }
+
+.cards-all-games .card .new,
+.cards-games .card .new, .cards-all-games .card .favorite,
+.cards-games .card .favorite {
+  position: absolute;
+  top: 0%; }
+
+.modal .modal-dialog .modal-content {
+  background-color: #15171e; }
+  .modal .modal-dialog .modal-content .modal-header .modal-logo-and-text {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    align-items: center; }
+    .modal .modal-dialog .modal-content .modal-header .modal-logo-and-text img {
+      width: 30px;
+      height: 30px; }
+  .modal .modal-dialog .modal-content .modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding-top: 0; }
+    .modal .modal-dialog .modal-content .modal-body .modal-title {
+      font-size: 20px;
+      font-weight: 600; }
+    .modal .modal-dialog .modal-content .modal-body img {
+      width: 100%;
+      height: auto; }
+    .modal .modal-dialog .modal-content .modal-body a {
+      margin-top: 10px; }
+    .modal .modal-dialog .modal-content .modal-body a {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      text-shadow: none; }
+      .modal .modal-dialog .modal-content .modal-body a p {
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 60px;
+        background-color: #0082b8;
+        color: #ffffff;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 20px; }
+        .modal .modal-dialog .modal-content .modal-body a p:hover {
+          background-color: #00a2e6; }
+
+.cards-all-games,
+.cards-games {
+  display: grid;
+  grid-auto-rows: auto;
+  margin: 15px;
+  gap: 15px; }
+  .cards-all-games .card,
+  .cards-games .card {
+    cursor: pointer;
+    background-color: #23252b;
+    color: #b3b3b3;
+    border: none; }
+    .cards-all-games .card .new,
+    .cards-games .card .new {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 35px;
+      background-color: #dd0000;
+      color: #ffffff;
+      border-radius: 5px 0;
+      text-shadow: none;
+      font-size: 14px;
+      font-weight: 500;
+      left: 0%; }
+    .cards-all-games .card .favorite,
+    .cards-games .card .favorite {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 35px;
+      background-color: #23252b;
+      color: #ffb400;
+      border-radius: 0 5px;
+      right: 0%; }
+      .cards-all-games .card .favorite ion-icon,
+      .cards-games .card .favorite ion-icon {
+        font-size: 22px; }
+    .cards-all-games .card img,
+    .cards-games .card img {
+      border-radius: 5px 7px 0 0;
+      position: relative; }
+    .cards-all-games .card p,
+    .cards-games .card p {
+      border-radius: 0 0 5px 5px;
+      padding: 10px; }
+    .cards-all-games .card:hover,
+    .cards-games .card:hover {
+      background-color: #313339;
+      color: #ffffff; }
+    .cards-all-games .card .logo-and-text,
+    .cards-games .card .logo-and-text {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: start;
+      align-items: center; }
+      .cards-all-games .card .logo-and-text img,
+      .cards-games .card .logo-and-text img {
+        width: 30px;
+        height: 30px; }
+      .cards-all-games .card .logo-and-text p,
+      .cards-games .card .logo-and-text p {
+        padding: 0;
+        font-weight: 500; }
+
+.cards-all-games {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); }
+
+@media (max-width: 480px) {
+  .cards-all-games {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
+
+.cards-games {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+
+.responsive-iframe {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; }
+  .responsive-iframe iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
+
+/* FRIENDS */
+header .alerts-and-notifications .avatar-and-icon .avatar .online, .user .avatar-and-icon .avatar .online, .friends ul li .friends-avatar .friend-avatar .friend-online, .friends ul li .friends-avatar .friend-avatar .friend-busy, .friends ul li .friends-avatar .friend-avatar .friend-away, .friends ul li .friends-avatar .friend-avatar .friend-offline {
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  border: 2px solid #333333; }
+
+.cards-all-games .card .new,
+.cards-games .card .new, .cards-all-games .card .favorite,
+.cards-games .card .favorite {
+  position: absolute;
+  top: 0%; }
+
+.friends p {
+  font-size: 16px; }
+
+.friends ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px; }
+  .friends ul li img {
+    width: auto;
+    height: 40px; }
+  .friends ul li .friends-avatar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: auto;
+    height: 55px; }
+    .friends ul li .friends-avatar .friend-avatar {
+      position: relative; }
+      .friends ul li .friends-avatar .friend-avatar .friend-online {
+        left: 28px;
+        top: 28px;
+        padding: 6px;
+        background-color: #6cdb00; }
+      .friends ul li .friends-avatar .friend-avatar .friend-busy {
+        left: 28px;
+        top: 28px;
+        padding: 6px;
+        background-color: #ab1e27; }
+      .friends ul li .friends-avatar .friend-avatar .friend-away {
+        left: 28px;
+        top: 28px;
+        padding: 6px;
+        background-color: #ffb400; }
+      .friends ul li .friends-avatar .friend-avatar .friend-offline {
+        left: 28px;
+        top: 28px;
+        padding: 6px;
+        background-color: #6b6b6b; }
+      .friends ul li .friends-avatar .friend-avatar .avatar-off {
+        filter: grayscale(100%); }
+      .friends ul li .friends-avatar .friend-avatar img {
+        width: auto;
+        height: 40px;
+        border-radius: 50%; }
+    .friends ul li .friends-avatar .friend-name {
+      display: flex;
+      flex-direction: column;
+      gap: 0; }
+      .friends ul li .friends-avatar .friend-name p:nth-child(1) {
+        color: #77c9ff; }
+
+.friends .favorites-list,
+.friends .friends-list {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-left: 15px;
+  margin-top: 10px; }
+  .friends .favorites-list ion-icon,
+  .friends .friends-list ion-icon {
+    font-size: 14px; }

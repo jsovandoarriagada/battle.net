@@ -1,0 +1,21 @@
+// BUTTONS
+a {
+  @include flex-base(row, 0);
+  @include flex-alignment(center, center);
+  text-shadow: none;
+
+  p {
+    @include flex-base(row, 0);
+    @include flex-alignment(center, center);
+    @include measures(280px, 60px);
+    background-color: $blizzard-dark;
+    color: $text-active;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: $large;
+
+    &:hover {
+      background-color: $blizzard;
+    }
+  }
+}

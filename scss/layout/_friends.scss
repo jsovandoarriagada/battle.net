@@ -1,0 +1,84 @@
+/* FRIENDS */
+@import "../utilities/extends";
+@import "../utilities/maps";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.friends {
+  p {
+    font-size: $medium;
+  }
+
+  ul {
+    li {
+      @include flex-base(row, 0);
+      @include flex-alignment(space-between, center);
+      margin: 0 15px;
+
+      img {
+        @include measures(auto, 40px);
+      }
+
+      .friends-avatar {
+        @include flex-base(row, 10px);
+        @include measures(auto, 55px);
+
+        .friend-avatar {
+          position: relative;
+          .friend-online {
+            @extend %status;
+            @include status(28px, 28px, 6px);
+            background-color: map-get($map: $status, $key: online);
+          }
+
+          .friend-busy {
+            @extend %status;
+            @include status(28px, 28px, 6px);
+            background-color: map-get($map: $status, $key: busy);
+          }
+
+          .friend-away {
+            @extend %status;
+            @include status(28px, 28px, 6px);
+            background-color: map-get($map: $status, $key: away);
+          }
+
+          .friend-offline {
+            @extend %status;
+            @include status(28px, 28px, 6px);
+            background-color: map-get($map: $status, $key: offline);
+          }
+
+          .avatar-off {
+            filter: grayscale(100%);
+          }
+
+          img {
+            @include measures(auto, 40px);
+            border-radius: 50%;
+          }
+        }
+        .friend-name {
+          @include flex-base(column, 0);
+
+          p {
+            &:nth-child(1) {
+              color: $blizzard-light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .favorites-list,
+  .friends-list {
+    @include flex-base(row, 5px);
+    margin-left: 15px;
+    margin-top: 10px;
+
+    ion-icon {
+      font-size: $small;
+    }
+  }
+}

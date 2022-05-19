@@ -1,0 +1,11 @@
+// SCROLLBAR
+@import "../utilities/mixins";
+
+::-webkit-scrollbar {
+  @include measures(8px, auto);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $foreground;
+  border-radius: 5px;
+}

@@ -1,0 +1,39 @@
+// MODALS
+.modal {
+  .modal-dialog {
+    .modal-content {
+      background-color: $background;
+
+      .modal-header {
+        .modal-logo-and-text {
+          @include flex-base(row, 10px);
+          @include flex-alignment(start, center);
+
+          img {
+            @include measures(30px, 30px);
+          }
+        }
+      }
+      .modal-body {
+        @include flex-base(column, 20px);
+        text-align: center;
+        padding-top: 0;
+
+        .modal-title {
+          font-size: $large;
+          font-weight: 600;
+        }
+
+        img {
+          @include measures(100%, auto);
+        }
+
+        a {
+          margin-top: 10px;
+        }
+
+        @import "../components/buttons";
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+/* USER */
+@import "../utilities/extends";
+@import "../utilities/maps";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+.user {
+  @include flex-base(column, 0);
+  @include flex-alignment(center, start);
+  cursor: pointer;
+  margin-left: 15px;
+
+  .avatar-and-icon {
+    @include flex-base(row, 8px);
+    @include flex-alignment(center, center);
+    @include measures(auto, 80px);
+
+    .avatar {
+      position: relative;
+      .online {
+        @extend %status;
+        @include status(35px, 35px, 7px);
+        background-color: map-get($map: $status, $key: online);
+      }
+
+      img {
+        @include measures(auto, 50px);
+        border-radius: 50%;
+      }
+    }
+
+    .user-name {
+      @include flex-base(column, 0);
+      p {
+        &:nth-child(1) {
+          color: $blizzard-light;
+        }
+      }
+    }
+
+    @media (max-width: 1366px) {
+      .user-name {
+        display: none;
+      }
+    }
+
+    ion-icon {
+      filter: drop-shadow(1px 1px #000000);
+      color: $text-active;
+      font-size: $medium;
+    }
+  }
+
+  .user-bar {
+    @include flex-base(row, 5px);
+    @include flex-alignment(center, center);
+    @include measures(95%, 80px);
+    color: $text;
+
+    .add-friend {
+      @include flex-base(row, 0);
+      @include flex-alignment(center, center);
+      @include measures(40px, 40px);
+      background-color: $foreground;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $foreground-active;
+        color: $text-active;
+      }
+      ion-icon {
+        font-size: $extra-large;
+      }
+    }
+
+    .friend-settings {
+      @include flex-base(row, 0);
+      @include flex-alignment(center, center);
+      @include measures(40px, 40px);
+      background-color: $foreground;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $foreground-active;
+        color: $text-active;
+      }
+
+      ion-icon {
+        font-size: $extra-large;
+      }
+    }
+
+    .search-input {
+      @include flex-base(row, 0);
+      @include flex-alignment(center, center);
+      @include measures(auto, 40px);
+      background-color: $foreground;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $foreground-active;
+        color: $text-active;
+      }
+
+      input {
+        @include measures(160px, 40px);
+        color: $text-active;
+        padding-left: 10px;
+        background: none;
+        outline: none;
+        border: none;
+      }
+      .search {
+        @include measures(40px, auto);
+        padding-top: 5px;
+
+        ion-icon {
+          font-size: $extra-large;
+        }
+      }
+    }
+  }
+}

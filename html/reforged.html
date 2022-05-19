@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fictional Battle.net Web App, Warcraft III: Reforged Section" />
+    <meta name="keywords" content="Warcraft III: Reforged, Games, Battle.net, Blizzard" />
+    <meta name="author" content="José Simón Ovando Arriagada" />
+    <title>Battle.net &mdash; Warcraft III: Reforged</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../img/favicon/site.webmanifest" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="layout-games">
+      <!-- HEADER -->
+      <header>
+        <!-- HEADER: BATTLE.NET LOGO -->
+        <div class="logo-and-menu">
+          <a href="../index.html">
+            <img src="../img/logos/battle-net.png" alt="Battle.net's Logo" />
+          </a>
+        </div>
+        <div class="alerts-and-notifications">
+          <!-- HEADER: ALERTS -->
+          <ion-icon name="alert-circle"></ion-icon>
+          <!-- HEADER: NOTIFICATIONS -->
+          <ion-icon name="notifications"></ion-icon>
+          <!-- HEADER: AVATAR -->
+          <div class="avatar-and-icon">
+            <div class="avatar">
+              <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+              <div class="online"></div>
+            </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <!-- USER -->
+      <section class="user">
+        <!-- USER: AVATAR -->
+        <div class="avatar-and-icon">
+          <div class="avatar">
+            <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+            <div class="online"></div>
+          </div>
+          <div class="user-name">
+            <p>Simón</p>
+            <p>Online</p>
+          </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+        <!-- USER: ADD FRIEND, SETTINGS & INPUT -->
+        <div class="user-bar">
+          <div class="add-friend">
+            <ion-icon name="person-add"></ion-icon>
+          </div>
+          <div class="friend-settings">
+            <ion-icon name="settings"></ion-icon>
+          </div>
+          <div class="search-input">
+            <input type="text" />
+            <div class="search">
+              <ion-icon name="search"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NAV -->
+      <nav>
+        <!-- NAV: GAMES -->
+        <div class="games">
+          <!-- NAV: ALL GAMES -->
+          <a class="all-games" href="../index.html">
+            <ion-icon name="grid-sharp"></ion-icon>
+            <p>ALL GAMES</p>
+          </a>
+          <!-- NAV: FAVORITE GAMES -->
+          <div class="favorite-games">
+            <a id="hearthstone" href="hearthstone.html">
+              <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+            </a>
+            <a href="heroes.html">
+              <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+            </a>
+            <a class="selected" href="reforged.html">
+              <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+            </a>
+            <a href="starcraft.html">
+              <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+            </a>
+            <a href="warcraft.html">
+              <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+            </a>
+            <div class="add-game">
+              <a class="add" href="#">
+                <ion-icon name="add"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ACTION -->
+      <section class="action">
+        <!-- ACTION: GAME LOGO -->
+        <div class="logo-and-options">
+          <figure>
+            <img src="../img/logos/reforged.png" alt="Warcraft III: Reforged's Logo" />
+          </figure>
+          <!-- ACTION: OPTIONS -->
+          <ul>
+            <li>
+              <ion-icon name="cart"></ion-icon>
+              <p>Shop Warcraft III: Reforged</p>
+            </li>
+            <li>
+              <ion-icon name="chatbox-ellipses"></ion-icon>
+              <p>Forums</p>
+            </li>
+            <li>
+              <ion-icon name="alert-circle"></ion-icon>
+              <p>Patch Notes</p>
+            </li>
+            <li>
+              <ion-icon name="cloud-upload"></ion-icon>
+              <p>Upgrade Available</p>
+            </li>
+          </ul>
+        </div>
+        <div class="action-box">
+          <!-- ACTION: GAME VERSION & REGION -->
+          <p class="game-version">GAME VERSION</p>
+          <div class="version-and-region">
+            <div class="version">
+              <p>Warcraft III: Reforged</p>
+              <ion-icon name="chevron-down-sharp"></ion-icon>
+            </div>
+            <div class="region">
+              <ion-icon name="globe-sharp"></ion-icon>
+            </div>
+          </div>
+          <!-- ACTION: INSTALL -->
+          <a href="install.html"><p>Install</p></a>
+          <!-- ACTION: LOCATE -->
+          <p class="installated">Already Installated? <a href="#">Locate the game.</a></p>
+        </div>
+      </section>
+      <!-- MAIN -->
+      <main>
+        <!-- <h1>WARCRAFT III: REFORGED</h1> -->
+        <!-- MAIN: ALERT -->
+        <div class="alerts">
+          <ion-icon name="alert-circle-sharp"></ion-icon>
+          <p>We are performing a scheduled maintenance.</p>
+        </div>
+        <!-- MAIN: CAROUSEL -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/carousel/w3r-carousel-desktop-1.jpg" class="desktop-img w-100" alt="Warcraft III: Reforged's Carousel 1" />
+              <img src="../img/carousel/w3r-carousel-mobile-1.jpg" class="mobile-img w-100" alt="Warcraft III: Reforged's Carousel 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carousel/w3r-carousel-desktop-2.jpg" class="desktop-img w-100" alt="Warcraft III: Reforged's Carousel 2" />
+              <img src="../img/carousel/w3r-carousel-mobile-2.jpg" class="mobile-img w-100" alt="Warcraft III: Reforged's Carousel 2" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- MAIN: CARDS -->
+        <section class="cards-games">
+          <!-- MAIN: CARD 1 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#warcraft-iii-reforged-1">
+            <img src="../img/cards/w3r-card-1.jpg" class="card-img-top" alt="Warcraft III: Reforged's Card 1" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Revisitig the Warcraft III Editor</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 1 -->
+          <div class="modal fade" id="warcraft-iii-reforged-1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+                    <p>Revisitig the Warcraft III Editor</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/w3r-card-1.jpg" alt="Warcraft III: Reforged's Card 1" />
+                  <p>Whether this is your first time or merely your first time in forever, come with us as we crack open the Warcraft III editor and run through the fundamentals of map creation. By the end of this article, you should know about all the editor's primary Modules, be able to use the Terrain Editor to lay out a basic map, have a basic understanding of how to adjust Unit Properties, and know how to create a Custom Game and share your map with your friends.</p>
+                  <p class="modal-title">Creating a New Map</p>
+                  <p>In the File menu, select New Map, and let's leave all settings at their default values for now.</p>
+                  <p class="modal-title">Terrain</p>
+                  <p>Let's modify the terrain by adding cliffs. In the Terrain Palette, make sure “Apply Cliff” is enabled and “Decrease One” is selected. Draw a trench right down the middle of the map.</p>
+                  <p class="modal-title">Starting Locations</p>
+                  <p>Switch to the Unit Palette. Select the “Start Location” unit and place it where you want player 1 to start, then switch the selected player to Player 2 and place another Start Location.</p>
+                  <p class="modal-title">Map Settings</p>
+                  <p>In the Scenario menu, select Player Options and make sure both players 1 and 2 are enabled.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 2 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#warcraft-iii-reforged-2">
+            <img src="../img/cards/w3r-card-2.jpg" class="card-img-top" alt="Warcraft III: Reforged's Card 2" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Player Profiles</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 2 -->
+          <div class="modal fade" id="warcraft-iii-reforged-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+                    <p>Player Profiles</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/w3r-card-2.jpg" alt="Warcraft III: Reforged's Card 2" />
+                  <p class="modal-title">Feeling the Nostalgia</p>
+                  <p>As with the Ranked Play system, we want the Player Profile system to capture the feel of legacy Warcraft III while providing updates that enhance the experience. Therefore, many of the features included in the original system will be brought into Warcraft III: Reforged.</p>
+                  <p class="modal-title">Player Portrait</p>
+                  <p>In legacy Warcraft III, you were able to see your Player Portrait icon and were given additional space to include information about yourself, providing you a way to customize your profile. For Reforged, we felt it was very important to maintain this. In the new Profile System, you will also be able to customize your player portrait and details. We have combined the original homepage and additional information sections into one personal details section.</p>
+                  <p class="modal-title">Looking Forward</p>
+                  <p>The Player Profile system will launch in the next major content patch alongside the Ranked System. We are still looking to release in the next few months and will provide another update as we get closer to launch. We look forward to seeing the community discuss the upcoming Player Profile feature, along the continual discussion of our Ranked Play.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 3 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#warcraft-iii-reforged-3">
+            <img src="../img/cards/w3r-card-3.jpg" class="card-img-top" alt="Warcraft III: Reforged's Card 3" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Ranked Play</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 3 -->
+          <div class="modal fade" id="warcraft-iii-reforged-3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+                    <p>Ranked Play</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/w3r-card-3.jpg" alt="Warcraft III: Reforged's Card 3" />
+                  <p class="modal-title">Setting Goals</p>
+                  <p>When revisiting our designs for Ranked Play, we established a set of primary goals to guide our decision-making. Fundamentally, Ranked Play should provide a clear and trustworthy way for players to gauge their level of skill, as well as the skill of other players. In support of this, we've opted to make players' ranks linked directly to their MMRs, rather than using a more detached, progression-based system. Additionally, while Ranked Play is the most competitive way to play Warcraft III: Reforged, it's also important for us to ensure that this experience will be friendly for new players and veteran alike.</p>
+                  <p>As we continue building this next generation of Ranked Play, we want to deliver an experience where the features and functionality build upon the original Warcraft III Ranked mode, while also considering the community-driven variants that have emerged in both legacy Warcraft III and Reforged.</p>
+                  <p class="modal-title">A Look At Ranked Play</p>
+                  <p>As with the legacy version of Warcraft III, all five of the game modes in Reforged (1v1, 2v2, 3v3, 4v4, FFA) will have their own ranked ladders. In keeping with legacy Warcraft III’s spirit, we also wanted to ensure that there are no requirements for moving up or down in rank beyond your raw point value. This means we will not institute systems like promotion or demotion matches.</p>
+                  <p class="modal-title">Season Overview</p>
+                  <p>Alongside the improvements coming to the Ranked Ladder, we are also going to be bringing Ranked Seasons to Warcraft III for the first time. Seasons will offer an opportunity to roll in balance updates, fresh map rotations, and other adjustments, as well as give players rewards for participating (and seeing how high up the ladder they can climb) in each new Season.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 4 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#warcraft-iii-reforged-4">
+            <img src="../img/cards/w3r-card-4.jpg" class="card-img-top" alt="Warcraft III: Reforged's Card 4" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Patch Notes - Version 1.32.6</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 4 -->
+          <div class="modal fade" id="warcraft-iii-reforged-4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+                    <p>Patch Notes - Version 1.32.6</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/w3r-card-4.jpg" alt="Warcraft III: Reforged's Card 4" />
+                  <p>For heroes in general, we're looking at the costs and sometimes the functionality of hero ultimate abilities, to make them a bit more competitive with a hero's base line abilities and mana pool.</p>
+                  <p>Items are another big area of this patch. Charged levels 5 and 6 are getting a shake-up to see if we can encourage more usage of these categories going forward.</p>
+                  <p>Additionally, we want to support map makers' future endeavors by doing a balance pass on the units provided by Mercenary Camps. Finally, in 1v1 matchups, we want to address rifle pushes in Human vs. Night Elf and slightly alter the early game in Human vs. Undead.</p>
+                  <p>There will also be a map pool rotation in this patch. One map per game mode will be rotated out and a new one rotated in. This time around, all of the maps are made by our wonderful community map makers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 5 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#warcraft-iii-reforged-5">
+            <img src="../img/cards/w3r-card-5.jpg" class="card-img-top" alt="Warcraft III: Reforged's Card 5" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>The Story So Far</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 5 -->
+          <div class="modal fade" id="warcraft-iii-reforged-5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+                    <p>The Story So Far</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/w3r-card-5.jpg" alt="Warcraft III: Reforged's Card 5" />
+                  <p>Once the greatest warrior of the godlike Titans—the assemblage of cosmic entities responsible for the shaping and ordering of the universe—Sargeras succumbed to the all-consuming corruption of the Twisting Nether, a plane between worlds composed of chaotic magics, and its resident fiends while attempting to shield his brethren from its depravity. Convinced that the only way to spare the universe from the Nether's demonic entities was to purge it, he soon turned his power on the cosmos, seeking to cleanse all life in existence. To this end, he forged the demonic Burning Legion. After a failed attack on Azeroth 10,000 years ago, Sargeras saw an opportunity to once again strike at the world, and possessed the magus Medivh, intending to use his power to foment a war between worlds that would force Azeroth to buckle upon itself.</p>
+                  <p>Corrupted by the malignant magics of Sargeras, Medivh, the last of an ancient line of powerful magi and friend to the throne of Stormwind, worked to orchestrate Azeroth's downfall. He found in the far-off world of Draenor a kindred spirit—the powerful warlock Gul'dan. Wielding heretical magic, this nefarious orc taught his brethren to channel demonic energy. His influence over the orcs came to a head when he convinced them to drink the blood of the demon Mannoroth, promising them invincibility in exchange for their compliance. The fiend's blood poisoned their minds, transforming the orcs into an army consumed by bloodlust and controlled from the shadows by Gul'dan and his puppet Warchief, Blackhand.</p>
+                  <p>Medivh struck a deal with his new ally: in exchange for the promise of godhood, Gul'dan would create a gateway between the human homeworld of Azeroth and his own planet, Draenor. Thus, the Dark Portal was first opened, and the Horde flooded through to clash with the humans.</p>
+                  <p>The orcish Horde assailed the humans' heartlands, razing entire towns and leaving ruin in their wake. For years, orcs and humans clashed in savage skirmishes, each side biding their time and surveying the enemy with the intent to launch a full-force strike when the hour was right. Three years after the Dark Portal was opened, the Horde marched on Stormwind City. Though their first attack was repelled by the King's Commander Anduin Lothar, the Horde retreated to regroup and decide how best to land a decisive blow against the human kingdom.</p>
+                  <p>Meanwhile, Medivh's apprentice Khadgar confided in King Llane and Anduin Lothar, revealing that his master had been corrupted by dark forces and had unleashed the Horde upon Azeroth. With Khadgar's aid, Lothar slew Medivh and banished the spirit of Sargeras within him to the Nether. Gul'dan, having entered Medivh's mind prior to his death to scour it for information, fell into a deep coma after the magus's death.</p>
+                  <p>The great orc chieftain Orgrim Doomhammer found himself disillusioned with the Horde's leadership under Gul'dan and Blackhand. Sensing an opportunity, he challenged Blackhand for the mantle of Warchief and emerged victorious.</p>
+                  <p>United under the banner of Doomhammer, the Horde marched upon Stormwind once more. While the city was under siege, Garona Halforcen, a former ally of the humans who was secretly in the thrall of Gul'dan's Shadow Council, secured victory for the orcs, and assassinated King Llane under the Council’s orders. The morale of Stormwind’s military died along with him, and the city fell to the might of the Horde. Anduin Lothar declared the war lost and retreated with the remnants of Stormwind's populace.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 6 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#warcraft-iii-reforged-6">
+            <img src="../img/cards/w3r-card-6.jpg" class="card-img-top" alt="Warcraft III: Reforged's Card 6" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Lok'tar Ogar!</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 6 -->
+          <div class="modal fade" id="warcraft-iii-reforged-6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+                    <p>Lok'tar Ogar!</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/w3r-card-6.jpg" alt="Hearthstone's Card 6" />
+                  <p>Prepare to relive the epic adventure that laid the foundation for Azeroth's most epic stories. Today at BlizzCon, Blizzard Entertainment announced Warcraft III: Reforged, a meticulous remake of the groundbreaking 2002 real-time strategy classic Warcraft III: Reign of Chaos and its expansion Warcraft III: The Frozen Throne.</p>
+                  <div class="responsive-iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/72UbFQO5-m0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p>With rebuilt versions of all the original games' art made with cutting-edge animation technology, hours of updated in-game cinematics, plus an overhauled World Editor and full integration into Blizzard Battle.net for a new era of multiplayer gameplay, Reforged is nothing less than the definitive Warcraft III experience. Conquer the battlefield anew as one of four playable races—the mighty Orcs, the noble Humans, the ancient Night Elves, and the insidious Undead Scourge—and experience the legends of Azeroth.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FRIENDS -->
+      <section class="friends">
+        <div class="favorites-list">
+          <ion-icon name="star"></ion-icon>
+          <p>Favorites - 3/3</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-2.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Bajheera</p>
+                <p>Blade's Edge Arena</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-3.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Kripparrian</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-4.jpg" alt="Friend's Avatar" />
+                <div class="friend-busy"></div>
+              </div>
+              <div class="friend-name">
+                <p>Pilav</p>
+                <p>Busy</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="friends-list">
+          <ion-icon name="people"></ion-icon>
+          <p>Friends - 6/8</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-5.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Itry</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-6.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Madvision</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-7.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Galadar</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-8.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Nymeria</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-9.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Fabriroth</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-10.jpg" alt="Friend's Avatar" />
+                <div class="friend-away"></div>
+              </div>
+              <div class="friend-name">
+                <p>Shaie</p>
+                <p>Away</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-11.jpg" alt="Friend's Avatar" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Eversio</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-12.jpg" alt="Friend's Avatar" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Crimson</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

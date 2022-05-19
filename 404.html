@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fictional Battle.net Web App, 404 Error Page" />
+    <meta name="keywords" content="404, Error, Page Not Found, Games, Battle.net, Blizzard" />
+    <meta name="author" content="José Simón Ovando Arriagada" />
+    <title>Battle.net &mdash; Error</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../img/favicon/site.webmanifest" />
+    <!-- STYLES-->
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: "Rubik", sans-serif;
+        background-color: #15171e;
+        color: #ffffff;
+        text-shadow: 1.2px 1.2px #000000;
+        font-size: 18px;
+      }
+
+      .layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        padding: 20px 0;
+      }
+
+      .layout-murloc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      span {
+        display: block;
+        color: #00a2e6;
+      }
+
+      .murloc {
+        height: 300px;
+        width: auto;
+      }
+
+      a {
+        text-decoration: none;
+        text-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .mrgl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+        height: 60px;
+        background-color: #0082b8;
+        color: #ffffff;
+        border-radius: 5px;
+        font-weight: 500;
+      }
+
+      .mrgl:hover {
+        background-color: #00a2e6;
+      }
+
+      .layout-blizzard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .blizzard-logo {
+        height: 80px;
+      }
+
+      .copyright {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="layout">
+      <div class="layout-murloc">
+        <h1><span>404</span>PAGE NOT FOUND</h1>
+        <img src="../img/404/murloc.png" class="murloc" alt="Rescue Murloc Image" />
+        <p>We've dispatched a rescue murloc to guide you back!</p>
+        <a href="../index.html"><p class="mrgl">Mmmrrgmgrrrgmmll!</p></a>
+      </div>
+      <div class="layout-blizzard">
+        <img class="blizzard-logo" src="../img/404/blizzard.png" alt="Blizzard's Logo" />
+        <div class="copyright">
+          <p>©2022 Blizzard Entertainment, Inc.</p>
+          <p>Site redesigned by José Simón Ovando Arriagada.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

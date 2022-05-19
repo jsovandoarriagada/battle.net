@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fictional Battle.net Web App, World of Warcraft Section" />
+    <meta name="keywords" content="World of Warcraft, Games, Battle.net, Blizzard" />
+    <meta name="author" content="José Simón Ovando Arriagada" />
+    <title>Battle.net &mdash; World of Warcraft</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../img/favicon/site.webmanifest" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="layout-games">
+      <!-- HEADER -->
+      <header>
+        <!-- HEADER: BATTLE.NET LOGO -->
+        <div class="logo-and-menu">
+          <a href="../index.html">
+            <img src="../img/logos/battle-net.png" alt="Battle.net's Logo" />
+          </a>
+        </div>
+        <div class="alerts-and-notifications">
+          <!-- HEADER: ALERTS -->
+          <ion-icon name="alert-circle"></ion-icon>
+          <!-- HEADER: NOTIFICATIONS -->
+          <ion-icon name="notifications"></ion-icon>
+          <!-- HEADER: AVATAR -->
+          <div class="avatar-and-icon">
+            <div class="avatar">
+              <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+              <div class="online"></div>
+            </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <!-- USER -->
+      <section class="user">
+        <!-- USER: AVATAR -->
+        <div class="avatar-and-icon">
+          <div class="avatar">
+            <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+            <div class="online"></div>
+          </div>
+          <div class="user-name">
+            <p>Simón</p>
+            <p>Online</p>
+          </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+        <!-- USER: ADD FRIEND, SETTINGS & INPUT -->
+        <div class="user-bar">
+          <div class="add-friend">
+            <ion-icon name="person-add"></ion-icon>
+          </div>
+          <div class="friend-settings">
+            <ion-icon name="settings"></ion-icon>
+          </div>
+          <div class="search-input">
+            <input type="text" name="" id="" />
+            <div class="search">
+              <ion-icon name="search"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NAV -->
+      <nav>
+        <!-- NAV: GAMES -->
+        <div class="games">
+          <!-- NAV: ALL GAMES -->
+          <a class="all-games" href="../index.html">
+            <ion-icon name="grid-sharp"></ion-icon>
+            <p>ALL GAMES</p>
+          </a>
+          <!-- NAV: FAVORITE GAMES -->
+          <div class="favorite-games">
+            <a id="hearthstone" href="hearthstone.html">
+              <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+            </a>
+            <a href="heroes.html">
+              <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+            </a>
+            <a href="reforged.html">
+              <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+            </a>
+            <a href="starcraft.html">
+              <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+            </a>
+            <a class="selected" href="warcraft.html">
+              <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+            </a>
+            <div class="add-game">
+              <a class="add" href="#">
+                <ion-icon name="add"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ACTION -->
+      <section class="action">
+        <!-- ACTION: GAME LOGO -->
+        <div class="logo-and-options">
+          <figure>
+            <img src="../img/logos/warcraft.png" alt="World of Warcraft's Logo" />
+          </figure>
+          <!-- ACTION: OPTIONS -->
+          <ul>
+            <li>
+              <ion-icon name="cart"></ion-icon>
+              <p>Shop World of Warcraft</p>
+            </li>
+            <li>
+              <ion-icon name="chatbox-ellipses"></ion-icon>
+              <p>Forums</p>
+            </li>
+            <li>
+              <ion-icon name="alert-circle"></ion-icon>
+              <p>Patch Notes</p>
+            </li>
+            <li>
+              <ion-icon name="cloud-upload"></ion-icon>
+              <p>Upgrade Available</p>
+            </li>
+          </ul>
+        </div>
+        <div class="action-box">
+          <!-- ACTION: GAME VERSION & REGION -->
+          <p class="game-version">GAME VERSION</p>
+          <div class="version-and-region">
+            <div class="version">
+              <p>World of Warcraft</p>
+              <ion-icon name="chevron-down-sharp"></ion-icon>
+            </div>
+            <div class="region">
+              <ion-icon name="globe-sharp"></ion-icon>
+            </div>
+          </div>
+          <!-- ACTION: INSTALL -->
+          <a href="install.html"><p>Install</p></a>
+          <!-- ACTION: LOCATE -->
+          <p class="installated">Already Installated? <a href="#">Locate the game.</a></p>
+        </div>
+      </section>
+      <!-- MAIN -->
+      <main>
+        <!-- <h1>WORLD OF WARCRAFT</h1> -->
+        <!-- MAIN: ALERT -->
+        <div class="alerts">
+          <ion-icon name="alert-circle-sharp"></ion-icon>
+          <p>We are performing a scheduled maintenance.</p>
+        </div>
+        <!-- MAIN: CAROUSEL -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/carousel/wow-carousel-desktop-1.jpg" class="desktop-img w-100" alt="World of Warcraft's Carousel 1" />
+              <img src="../img/carousel/wow-carousel-mobile-1.jpg" class="mobile-img w-100" alt="World of Warcraft's Carousel 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carousel/wow-carousel-desktop-2.jpg" class="desktop-img w-100" alt="World of Warcraft's Carousel 2" />
+              <img src="../img/carousel/wow-carousel-mobile-2.jpg" class="mobile-img w-100" alt="World of Warcraft's Carousel 2" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- MAIN: CARDS -->
+        <section class="cards-games">
+          <!-- MAIN: CARD 1 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#world-of-warcraft-1">
+            <img src="../img/cards/wow-card-1.jpg" class="card-img-top" alt="World of Warcraft's Card 1" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>The Icy Realm of Northrend</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 1 -->
+          <div class="modal fade" id="world-of-warcraft-1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+                    <p>The Icy Realm of Northrend</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/wow-card-1.jpg" alt="World of Warcraft's Card 1" />
+                  <p>The heroes of the Alliance and Horde have fought against the evils in Kalimdor and the Eastern Kingdoms, against the demons of the Burning Legion in Outland, and against each other—unaware that an imminent threat was looming in the vast and icy continent of Northrend.</p>
+                  <p>The Lich King, Arthas Menethil, sits in the ominous Icecrown Citadel scheming to claim the world as his own—a plan that threatens all life on Azeroth. Heroes of the Alliance and Horde must stand against the malevolent being who dares to declare himself the one true king of Azeroth...and seeks to scour all life from the world.</p>
+                  <div class="responsive-iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/1m7eB0Hxqf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p>Later this year, you will again get to explore bone-chilling lands, storm Icecrown Citadel, and halt the Lich King's baleful efforts. Only the most stalwart can challenge the Lich King and end his reign of terror in this rerelease of the expansion.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 2 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#world-of-warcraft-2">
+            <img src="../img/cards/wow-card-2.jpg" class="card-img-top" alt="World of Warcraft's Card 2" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Dragonflight Deep Dive</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 2 -->
+          <div class="modal fade" id="world-of-warcraft-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+                    <p>Dragonflight Deep Dive</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/wow-card-2.jpg" alt="World of Warcraft's Card 2" />
+                  <p>Join a full panel of World of Warcraft developers in this deep dive as they take you into the Dragon Isles and share insights about the new lands to explore, the creatures you'll meet, and take you deeper into the various systems and changes that will come with the expansion.</p>
+                  <div class="responsive-iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/c3nPloFgHkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p class="modal-title">Weaving the Story</p>
+                  <p>Once the broodlands of the Dragonflights, the Dragon Isles was once the center of the dragons' kingdom when the world was young, and the mortal races were just starting to form kingdoms of their own. When the Legion invaded in the War of the Ancients and the Great Sundering broke the world draining much of the magic of the land, the dragons were forced to leave their homeland behind. But they didn’t leave it without the watchers to stand in wait—ready to call back the flights when the elemental energy resurged, and the dragons could be drawn home to re-establish their kingdom.</p>
+                  <p>The time has come for the sky to light up with the colors of the aspects once again and for Alexstrasza and the others to come home. But the land has changed a lot in all these thousands of years they've been away, and some old threats have awakened as well.</p>
+                  <p>The dragons we know of today are quite different than the early past of Azeroth. They were more primitive, much more savage—what we now know as the protodragons.</p>
+                  <p>In more recent history the dragons we know were empowered to become the Aspects—the green dragonflight, red dragonflight, blue dragonflight, bronze dragonflight, and black dragonflight—each with unique powers and abilities to protect the world in different ways. These pillars of draconic powers were appointed to defend Azeroth from threats within and without. This power was used for good in the case of most of the Aspects, but also for more nefarious reasons in the case of the black dragonflight led by Neltharion who would later become Deathwing.</p>
+                  <p>An opportunity to reclaim their legacy and return once more as the protectors of Azeroth lays before the dragons, but they'll need the help of the heroes of Azeroth to face the challenges of this reawakening. The land has not been peacefully awaiting their return— old enemies have awakened as well and will need to be confronted and overcome if the flights are to make it their home once more.</p>
+                  <p>One of those old foes they will have to overcome are the elemental half-giants, the Djaradin. They aren't the only residents of the Dragon Isles, however, and there are many more occupants to get to know along your explorations. You'll encounter the beloved tuskarr as well as get to know the civilization of the centaurs which predates those who we came to know in Kalimdor.</p>
+                  <p>We'll also get to reconnect with Wrathion and see if he is ready to step into the leadership role as the leader of the black dragonflight, or if there's another path for him. We'll also meet up with Kalecgos, Ebonhorn, and Ysera's daughter Merithra to see where their return to the Dragon Isles takes them.</p>
+                  <p>A new playable race will also be available — the dracthyr. Dracthyr were an experiment created by Neltharion with the essence of the dragons and imbued with their strength, nobility, wisdom, and adaptability to become the perfect soldiers.</p>
+                  <p>Exploration is a key theme for this expansion and players will be able to adventure in this ancient land and explore the landscapes and its architectural history. We've created huge zones with many places to delve into with many old treasures and secrets tucked away. The heroes of Azeroth will work alongside The Reliquary and the Explorers' League to help the dragonflights to help them find their legacy, as they have long helped the residents of Azeroth.</p>
+                  <p>It's a true Azerothian adventure waiting to be had and explored.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 3 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#world-of-warcraft-3">
+            <img src="../img/cards/wow-card-3.jpg" class="card-img-top" alt="World of Warcraft's Card 3" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Warsong Scramble</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 3 -->
+          <div class="modal fade" id="world-of-warcraft-3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+                    <p>Warsong Scramble</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/wow-card-3.jpg" alt="World of Warcraft's Card 3" />
+                  <p>Do you have a flag? You'll have more than one to keep an eye on in this week's PvP Brawl: Warsong Scramble.</p>
+                  <p class="modal-title">Packed House Warfare</p>
+                  <p>We've put more PvP in your PvP! In Packed House, there's nowhere to hide as you face not 2, not 3, not 5, but 15 adversaries in this 15 vs. 15 Arena battle.</p>
+                  <p class="modal-title">Deep Six Resource Race</p>
+                  <p>Deep Six pits teams of six players against each other in three iconic Battlegrounds: Warsong Gulch, Silvershard Mines, and Temple of Kotmogu. Each Battleground offers a little variation on the traditional format, such as flags that are a bit closer in Warsong Gulch, less carts to keep track of in Silvershard Mines, and only two orbs within the Temple of Kotmogu.</p>
+                  <p class="modal-title">Frozen Arathi Blizzard Resource Race</p>
+                  <p>Put away your bathing suit, pull out your parka, and enter a winter wonderland as the Arathi Basin you know and love gets a fresh coat of ice and snow. You'll be racing your way between the farm, stables, mine, lumberyard, and blacksmith through piles of snow and over a - mostly - frozen lake. One more thing: the weather forecast calls for a bit of fog of war. We hope you're prepared for the weather.</p>
+                  <p class="modal-title">About PvP Brawls</p>
+                  <p>Every week, a new PvP Brawl will be available to players looking for something just a little different. Each Brawl will offer a variety of modes, rules, and scenic changes to the usual Battleground gameplay, and you'll find them in the Group Finder tool (hotkey “I”) in the Player vs. Player tab. Just like Random Battlegrounds, you'll receive a reward for achieving victory.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 4 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#world-of-warcraft-4">
+            <img src="../img/cards/wow-card-4.jpg" class="card-img-top" alt="World of Warcraft's Card 4" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Pet Battle Bonus Event</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 4 -->
+          <div class="modal fade" id="world-of-warcraft-4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+                    <p>Pet Battle Bonus Event</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/wow-card-4.jpg" alt="World of Warcraft's Card 4" />
+                  <p>Put your best battle pet teams to the test with this week's event. To get in on the action, open your Pet Journal (Collections Shift+ P) and click the “Find Battle” button to match up with an opponent with their own team of well-trained companions.</p>
+                  <p class="modal-title">Every Week</p>
+                  <p>The Bonus Events system consists of a rotating schedule of different activities, currently scheduled to run each week beginning on Tuesdays. Each Bonus Event grants a passive bonus to a particular game activity and offers a once-per-event quest with a noteworthy reward for accomplishing a related goal. The in-game calendar can serve as your one-stop reference for the event schedule. The Adventure Guide also offers a direct link to active Bonus Events, allowing you to easily accept any associated quests.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 5 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#world-of-warcraft-5">
+            <img src="../img/cards/wow-card-5.jpg" class="card-img-top" alt="World of Warcraft's Card 5" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>The Darkmoon Faire Returns</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 5 -->
+          <div class="modal fade" id="world-of-warcraft-5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+                    <p>The Darkmoon Faire Returns</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/wow-card-5.jpg" alt="World of Warcraft's Card 5" />
+                  <p class="modal-title">Step right up and prepare to be amazed!</p>
+                  <p>The Darkmoon Faire celebrates the wondrous, exotic, and mysterious from around Azeroth! This mist-shrouded island is a conundrum wrapped in an enigma, accessible for one week only at the beginning of each month.</p>
+                  <p>Come closer for a tantalizing glimpse of what Faire founder, Silas Darkmoon, brings for all to see!</p>
+                  <p class="modal-title">When</p>
+                  <p>Starting on the first Sunday of each month, lasting one week.</p>
+                  <p class="modal-title">Where</p>
+                  <p>Make your way to Darkmoon Island through portals in Elwynn Forest (Alliance) and Mulgore (Horde). You can easily reach the portals located in Elwynn Forest and Mulgore by paying a Darkmoon Faire Mystic Mage (located in Stormwind, Orgrimmar, and Dalaran) to teleport you there.</p>
+                  <p>Although there is no level restriction to attend the Faire, you can only travel to the island while the Darkmoon Faire is open.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 6 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#world-of-warcraft-6">
+            <img src="../img/cards/wow-card-6.jpg" class="card-img-top" alt="World of Warcraft's Card 6" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Children's Week Has Arrived!</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 6 -->
+          <div class="modal fade" id="world-of-warcraft-6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+                    <p>Children's Week Has Arrived!</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/wow-card-6.jpg" alt="World of Warcraft's Card 6" />
+                  <p>It's time to give back to the children of Azeroth during Children's Week! Take an orphan under your wing and show them the wonders of the world.</p>
+                  <p>Throughout the year, the orphans of Azeroth spend much of their time wandering their home cities, dreaming of the day they'll be old enough (and big enough) to go out into the world to experience the adventures and marvels they've missed as children. During Children's Week, the giving souls of the Horde and the Alliance can help make those dreams come true.</p>
+                  <img src="../img/modals/wow-bfa.jpg" alt="World of Warcraft: Battle for Azeroth's Card" />
+                  <p>All orphans (except Wolvar and Oracle) now have their own mounts, making it all that much easier to show them the wonders of Azeroth.</p>
+                  <p>Have fun traveling around the world with your little buddy!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FRIENDS -->
+      <section class="friends">
+        <div class="favorites-list">
+          <ion-icon name="star"></ion-icon>
+          <p>Favorites - 3/3</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-2.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Bajheera</p>
+                <p>Blade's Edge Arena</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-3.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Kripparrian</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-4.jpg" alt="Friend's Avatar" />
+                <div class="friend-busy"></div>
+              </div>
+              <div class="friend-name">
+                <p>Pilav</p>
+                <p>Busy</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="friends-list">
+          <ion-icon name="people"></ion-icon>
+          <p>Friends - 6/8</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-5.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Itry</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-6.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Madvision</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-7.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Galadar</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-8.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Nymeria</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-9.jpg" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Fabriroth</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-10.jpg" />
+                <div class="friend-away"></div>
+              </div>
+              <div class="friend-name">
+                <p>Shaie</p>
+                <p>Away</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-11.jpg" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Eversio</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-12.jpg" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Crimson</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

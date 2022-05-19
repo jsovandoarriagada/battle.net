@@ -1,0 +1,88 @@
+// CARDS
+@import "../utilities/extends";
+@import "../utilities/mixins";
+@import "../components/modals";
+@import "../utilities/variables";
+
+.cards-all-games,
+.cards-games {
+  display: grid;
+  grid-auto-rows: auto;
+  margin: 15px;
+  gap: 15px;
+
+  .card {
+    cursor: pointer;
+    background-color: $foreground;
+    color: $text;
+    border: none;
+
+    .new {
+      @include flex-base(row, 0);
+      @include flex-alignment(center, center);
+      @include measures(50px, 35px);
+      @include cards($new, $text-active, 5px, 0);
+      @extend %cards;
+      text-shadow: none;
+      font-size: $small;
+      font-weight: 500;
+      left: 0%;
+    }
+
+    .favorite {
+      @include flex-base(row, 0);
+      @include flex-alignment(center, center);
+      @include measures(40px, 35px);
+      @include cards($foreground, $alert, 0, 5px);
+      @extend %cards;
+      right: 0%;
+
+      ion-icon {
+        font-size: $extra-large;
+      }
+    }
+
+    img {
+      border-radius: 5px 7px 0 0;
+      position: relative;
+    }
+
+    p {
+      border-radius: 0 0 5px 5px;
+      padding: 10px;
+    }
+
+    &:hover {
+      background-color: $foreground-active;
+      color: $text-active;
+    }
+
+    .logo-and-text {
+      @include flex-base(row, 10px);
+      @include flex-alignment(start, center);
+
+      img {
+        @include measures(30px, 30px);
+      }
+
+      p {
+        padding: 0;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.cards-all-games {
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+@media (max-width: 480px) {
+  .cards-all-games {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.cards-games {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}

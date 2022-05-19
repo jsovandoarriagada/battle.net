@@ -1,0 +1,102 @@
+/* GRID*/
+.layout-all-games,
+.layout-games {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 320px auto 320px;
+  grid-template-rows: 70px 70px auto;
+
+  header {
+    grid-area: header;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  main {
+    grid-area: main;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .action {
+    grid-area: action;
+  }
+
+  .user {
+    grid-area: user;
+  }
+
+  @media (max-width: 1366px) {
+    .user,
+    .friends {
+      display: none;
+    }
+  }
+
+  .friends {
+    grid-area: friends;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+.layout-all-games {
+  grid-template-areas:
+    "header header user"
+    "nav nav user"
+    "main main friends";
+}
+
+.layout-games {
+  grid-template-areas:
+    "header header user"
+    "nav nav user"
+    "action main friends";
+
+  @media (max-width: 980px) {
+    .action {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .layout-all-games,
+  .layout-games {
+    grid-template-columns: 320px auto;
+    grid-template-rows: 70px 70px auto;
+  }
+
+  .layout-all-games {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "main main";
+  }
+  .layout-games {
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "action main";
+  }
+}
+
+@media (max-width: 980px) {
+  .layout-games {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main";
+    grid-template-columns: auto;
+    grid-template-rows: 70px 70px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .layout-all-games,
+  .layout-games {
+    grid-template-rows: 60px 60px auto;
+  }
+}

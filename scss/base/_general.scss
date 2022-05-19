@@ -1,0 +1,13 @@
+/* GENERAL */
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+body {
+  font-family: "Rubik", sans-serif;
+  text-shadow: 1.2px 1.2px $shadow;
+  background-color: $background;
+  color: $text-active;
+  font-size: $medium;
+
+  @import "../components/scrollbar";
+}

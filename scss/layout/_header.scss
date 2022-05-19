@@ -1,0 +1,101 @@
+/* HEADER */
+@import "../utilities/extends";
+@import "../utilities/maps";
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+header {
+  @include flex-base(row, 0);
+  @include flex-alignment(space-between, center);
+  @include measures(97.5%, auto);
+  margin: 0 auto;
+
+  .logo-and-menu {
+    @include flex-base(row, 0);
+
+    a {
+      cursor: pointer;
+
+      img {
+        @include measures(auto, 50px);
+        filter: drop-shadow(1px 1px $shadow);
+      }
+
+      @media (max-width: 480px) {
+        img {
+          @include measures(auto, 40px);
+        }
+      }
+    }
+  }
+
+  ion-icon {
+    cursor: pointer;
+    font-size: $extra-large;
+  }
+
+  .alerts-and-notifications {
+    @include flex-base(row, 10px);
+
+    ion-icon[name="alert-circle"] {
+      color: $alert;
+    }
+
+    .avatar-and-icon {
+      @include flex-base(row, 10px);
+      @include flex-alignment(center, center);
+      @include measures(auto, 80px);
+      display: none;
+
+      .avatar {
+        position: relative;
+        .online {
+          @extend %status;
+          @include status(35px, 35px, 7px);
+          background-color: map-get($map: $status, $key: online);
+        }
+
+        @media (max-width: 480px) {
+          .online {
+            @include status(28px, 28px, 6px);
+          }
+        }
+
+        img {
+          @include measures(auto, 50px);
+          border-radius: 50%;
+        }
+
+        @media (max-width: 480px) {
+          img {
+            @include measures(auto, 40px);
+          }
+        }
+      }
+      .user-name {
+        @include flex-base(column, 0);
+      }
+
+      ion-icon {
+        filter: drop-shadow(1px 1px $shadow);
+        color: $text-active;
+        font-size: $medium;
+      }
+    }
+
+    @media (max-width: 1366px) {
+      .avatar-and-icon {
+        @include flex-base(row, 5px);
+      }
+    }
+  }
+
+  @media (max-width: 1366px) {
+    .alerts-and-notifications {
+      ion-icon[name="alert-circle"],
+      ion-icon[name="notifications"] {
+        display: none;
+      }
+    }
+  }
+}

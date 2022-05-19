@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fictional Battle.net Web App, Hearthstone Section" />
+    <meta name="keywords" content="Hearthstone, Games, Battle.net, Blizzard" />
+    <meta name="author" content="José Simón Ovando Arriagada" />
+    <title>Battle.net &mdash; Hearthstone</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../img/favicon/site.webmanifest" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <div class="layout-games">
+      <!-- HEADER -->
+      <header>
+        <!-- HEADER: BATTLE.NET LOGO -->
+        <div class="logo-and-menu">
+          <a href="../index.html">
+            <img src="../img/logos/battle-net.png" alt="Battle.net's Logo" />
+          </a>
+        </div>
+        <div class="alerts-and-notifications">
+          <!-- HEADER: ALERTS -->
+          <ion-icon name="alert-circle"></ion-icon>
+          <!-- HEADER: NOTIFICATIONS -->
+          <ion-icon name="notifications"></ion-icon>
+          <!-- HEADER: AVATAR -->
+          <div class="avatar-and-icon">
+            <div class="avatar">
+              <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+              <div class="online"></div>
+            </div>
+            <ion-icon name="chevron-down"></ion-icon>
+          </div>
+        </div>
+      </header>
+      <!-- USER -->
+      <section class="user">
+        <!-- USER: AVATAR -->
+        <div class="avatar-and-icon">
+          <div class="avatar">
+            <img src="../img/avatars/avatar-1.jpg" alt="User's Avatar" />
+            <div class="online"></div>
+          </div>
+          <div class="user-name">
+            <p>Simón</p>
+            <p>Online</p>
+          </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+        <!-- USER: ADD FRIEND, SETTINGS & INPUT -->
+        <div class="user-bar">
+          <div class="add-friend">
+            <ion-icon name="person-add"></ion-icon>
+          </div>
+          <div class="friend-settings">
+            <ion-icon name="settings"></ion-icon>
+          </div>
+          <div class="search-input">
+            <input type="text" name="" id="" />
+            <div class="search">
+              <ion-icon name="search"></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NAV -->
+      <nav>
+        <!-- NAV: GAMES -->
+        <div class="games">
+          <!-- NAV: ALL GAMES -->
+          <a class="all-games" href="../index.html">
+            <ion-icon name="grid-sharp"></ion-icon>
+            <p>ALL GAMES</p>
+          </a>
+          <!-- NAV: FAVORITE GAMES -->
+          <div class="favorite-games">
+            <a id="hearthstone" class="selected-hearthstone" href="hearthstone.html">
+              <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+            </a>
+            <a href="../html/heroes.html">
+              <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+            </a>
+            <a href="../html/reforged.html">
+              <img src="../img/logos/reforged.svg" alt="Warcraft III: Reforged's Logo" />
+            </a>
+            <a href="../html/starcraft.html">
+              <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+            </a>
+            <a href="../html/warcraft.html">
+              <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+            </a>
+            <div class="add-game">
+              <a class="add" href="#">
+                <ion-icon name="add"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ACTION -->
+      <section class="action">
+        <!-- ACTION: GAME LOGO -->
+        <div class="logo-and-options">
+          <figure>
+            <img src="../img/logos/hearthstone.png" alt="Hearthstone's Logo" />
+          </figure>
+          <!-- ACTION: OPTIONS -->
+          <ul>
+            <li>
+              <ion-icon name="cart"></ion-icon>
+              <p>Shop Hearthstone</p>
+            </li>
+            <li>
+              <ion-icon name="chatbox-ellipses"></ion-icon>
+              <p>Forums</p>
+            </li>
+            <li>
+              <ion-icon name="alert-circle"></ion-icon>
+              <p>Patch Notes</p>
+            </li>
+            <li>
+              <ion-icon name="cloud-upload"></ion-icon>
+              <p>Upgrade Available</p>
+            </li>
+          </ul>
+        </div>
+        <div class="action-box">
+          <!-- ACTION: GAME VERSION & REGION -->
+          <p class="game-version">GAME VERSION</p>
+          <div class="version-and-region">
+            <div class="version">
+              <p>Hearthstone</p>
+              <ion-icon name="chevron-down-sharp"></ion-icon>
+            </div>
+            <div class="region">
+              <ion-icon name="globe-sharp"></ion-icon>
+            </div>
+          </div>
+          <!-- ACTION: INSTALL -->
+          <a href="install.html"><p>Install</p></a>
+          <!-- ACTION: LOCATE -->
+          <p class="installated">Already Installated? <a href="#">Locate the game.</a></p>
+        </div>
+      </section>
+      <!-- MAIN -->
+      <main>
+        <!-- MAIN: ALERT -->
+        <div class="alerts">
+          <ion-icon name="alert-circle-sharp"></ion-icon>
+          <p>We are performing a scheduled maintenance.</p>
+        </div>
+        <!-- MAIN: CAROUSEL -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/carousel/hs-carousel-desktop-1.jpg" class="desktop-img w-100" alt="Hearthstone's Carousel 1" />
+              <img src="../img/carousel/hs-carousel-mobile-1.jpg" class="mobile-img w-100" alt="Hearthstone's Carousel 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/carousel/hs-carousel-desktop-2.jpg" class="desktop-img w-100" alt="Hearthstone's Carousel 2" />
+              <img src="../img/carousel/hs-carousel-mobile-2.jpg" class="mobile-img w-100" alt="Hearthstone's Carousel 2" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- MAIN: CARDS -->
+        <section class="cards-games">
+          <!-- MAIN: CARD 1 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#hearthstone-1">
+            <img src="../img/cards/hs-card-1.jpg" class="card-img-top" alt="Hearthstone's Card 1" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>New Features Coming Soon!</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 1 -->
+          <div class="modal fade" id="hearthstone-1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+                    <p>New Features Coming Soon!</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hs-card-1.jpg" alt="Hearthstone's Card 1" />
+                  <p>In the year of the Hydra, Hearthstone is focusing on improving existing game experiences and building a better, more player-friendly game client. With that in mind, we're happy to share that three exciting new features will be coming to Hearthstone as soon as Patch 23.2!</p>
+                  <p class="modal-title">Upgrade to Golden</p>
+                  <p>Fans of Golden cards will now have the option of Upgrading their normal cards into Golden versions, in addition to the original option of crafting Golden versions from scratch. The Arcane Dust cost to Upgrade a card is the difference between its base cost and the Golden cost. That means that you get the full dust value of any of your cards you decide to Upgrade! Now fans of Golden cards have an option to easily and efficiently bling out their favorite cards.</p>
+                  <p class="modal-title">Share Deck Codes in Chat</p>
+                  <p>You can easily share deck codes through the in-game chat! Send your friend a deck code and they'll be able to copy it directly from chat into their deckbuilder. Show off your cool homebrew or grab the latest tech from ladder with ease as you fill up both your friends list and your deck slots.</p>
+                  <p class="modal-title">Favorite Multiple Card Backs</p>
+                  <p>You will be able to Favorite multiple card backs, instead of just one. This means that in each game you will randomly equip a card back from those you favorited. With so many great card backs now in the game, how could you choose just one?! Fans of pure randomness will still be able to toggle their decks to use ANY card back (uncheck "Favorites Only"), not just a favorite. Since card back settings are now saved on a deck-by-deck basis, out-of-match things like pack opening will use whatever settings you most recently selected.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 2 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#hearthstone-2">
+            <img src="../img/cards/hs-card-2.jpg" class="card-img-top" alt="Hearthstone's Card 2" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>The Rise of the Naga</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 2 -->
+          <div class="modal fade" id="hearthstone-2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+                    <p>The Rise of the Naga</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hs-card-2.jpg" alt="Hearthstone's Card 2" />
+                  <p>Patch 23.2, launching on May 10, will bring with it the first ever Battlegrounds Season, Rise of the Naga. The new season will bring a Battlegrounds Rating reset, a new hero, and an entire new minion type, the Naga!</p>
+                  <p class="modal-title">Naga</p>
+                  <p>Naga are spell-thirsty minions that are drawn to magic. They tend to give you spells or get more powerful when spells are played around them.</p>
+                  <p class="modal-title">Spellcraft</p>
+                  <p>Some Naga have the unique new keyword, Spellcraft! Minions with the Spellcraft keyword grant a temporary spell each turn. That spell can give your minions a buff that lasts until the start of your next Recruit phase.</p>
+                  <p class="modal-title">The Queen Comes for the Crown</p>
+                  <p>Queen Azshara will be the newest hero to come to Battlegrounds. The Highborne Queen and her people were cursed to live out their days as vengeful Naga. After transforming into Naga Queen Azshara, wave after wave of Naga will be under your command! Do you have what it takes to lead them to victory?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 3 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#hearthstone-3">
+            <img src="../img/cards/hs-card-3.jpg" class="card-img-top" alt="Hearthstone's Card 3" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Warcraft® Arclight Rumble™</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 3 -->
+          <div class="modal fade" id="hearthstone-3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+                    <p>Warcraft® Arclight Rumble™</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hs-card-3.jpg" alt="Hearthstone's Card 3" />
+                  <p>Join us in a new lighthearted and whimsical game where you're in command. Easy to learn but hard to master, Warcraft® Arclight Rumble™ tests players' ability to create miniature armies to effectively overcome each mission's unique challenges.</p>
+                  <div class="responsive-iframe"><iframe src="https://www.youtube.com/embed/tqnFIohEQ1M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p>Designed from the ground up for mobile and set in the beloved Warcraft universe, Warcraft Arclight Rumble invites players to build armies with their favorite heroes and villains from Warcraft and battle it out in exciting scenarios designed to test their tactical wits.</p>
+                  <div class="responsive-iframe"><iframe src="https://www.youtube.com/embed/0jPOG8Nru_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p>In the fantasy world of Azeroth, Warcraft Arclight Rumble is a dazzling new sensation that's sweeping inns and taverns across the land—a wonderous mechanical amusement machine powered by the mad wizardry of gnomish engineering, where Azeroth's greatest heroes and most fearsome villains come to life in miniature to do battle.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 4 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#hearthstone-4">
+            <img src="../img/cards/hs-card-4.jpg" class="card-img-top" alt="Hearthstone's Card 4" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Voyage to the Sunken City</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 4 -->
+          <div class="modal fade" id="hearthstone-4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+                    <p>Voyage to the Sunken City</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hs-card-4.jpg" alt="Hearthstone's Card 4" />
+                  <p>All aboard! Grab your snorkel and your flippers, Voyage to the Sunken City is now live worldwide with 135 new collectible cards, the new Naga minion type, new Colossal and Dredge keywords, sunken treasures, and more!</p>
+                  <div class="responsive-iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/zvSP9yvX4qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p class="modal-title">Naga</p>
+                  <p>The vengeful Naga are Hearthstone's newest minion type. Naga are drawn to magic and tend to have stronger effects if you cast spells while they watch from your hand.</p>
+                  <p class="modal-title">Colossal Minions</p>
+                  <p>Colossal minions are so big, they don't fit on one card! Minions with the Colossal keyword come with additional appendages that synergize with the minion's main body. Those appendages are part of the Colossal minion, so they are summoned whenever the main body is summoned, even if it was not played from hand. Each class has its own Legendary Colossal Minion in Voyage to the Sunken City.</p>
+                  <p class="modal-title">Dredge and Sunken Treasures</p>
+                  <p>Dredge is a new keyword that lets you look at the bottom cards of your deck and choose one to bubble up to the top. Azsharan cards are cards that put a more powerful “Sunken” copy of themselves on the bottom of your deck. Use Dredge to find that pivotal removal spell, that key combo piece, or your powerful Sunken treasures!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 5 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#hearthstone-5">
+            <img src="../img/cards/hs-card-5.jpg" class="card-img-top" alt="Hearthstone's Card 5" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>The Year of the Hydra</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 5 -->
+          <div class="modal fade" id="hearthstone-5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+                    <p>The Year of the Hydra</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hs-card-5.jpg" alt="Hearthstone's Card 5" />
+                  <p>It's once again time to look to the great Hearthstone clock in the sky as it ticks one more tock forward. Get ready for the next Hearthstone year—the Year of the Hydra! But before we move forward, let's take a quick look back at what has happened in the last Hearthstone year.</p>
+                  <p class="modal-title">The Year of the Gryphon</p>
+                  <p>During the Year of the Gryphon, we joined 10 hero-mercenaries on their journey, starting in the Horde's harsh proving grounds in Forged in the Barrens, then venturing to the Alliance's capital-city in United in Stormwind, and culminating in a bitter conflict in the snowy Fractured in Alterac Valley. In the Book of Mercenaries solo content, we followed the stories of these characters as they grew stronger, came to know one another, and, eventually, joined together to take down the Black Dragonflight.</p>
+                  <p class="modal-title">Looking Forward</p>
+                  <div class="responsive-iframe"><iframe width="560" height="315" src="https://www.youtube.com/embed/vnKP-cPrin8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                  <p>The Year of the Hydra will kick off with the launch of Voyage to the Sunken City on April 12. This year, our focus will be on adding to and improving our current systems, instead of creating entirely new game modes. This will include specific quality of life improvements, like the random hero skin feature and in-game reporting, as well as overall client performance improvements. On the roadmap below, you can see this emphasis on improvement and refinement for the upcoming year!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: CARD 6 -->
+          <div class="card" data-bs-toggle="modal" data-bs-target="#hearthstone-6">
+            <img src="../img/cards/hs-card-6.jpg" class="card-img-top" alt="Hearthstone's Card 6" />
+            <div class="card-body">
+              <div class="logo-and-text">
+                <p>Rewards Track Refresh</p>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN: MODAL 6 -->
+          <div class="modal fade" id="hearthstone-6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <div class="modal-logo-and-text">
+                    <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+                    <p>Rewards Track Refresh</p>
+                  </div>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../img/cards/hs-card-6.jpg" alt="Hearthstone's Card 6" />
+                  <p>It's almost time to dive into a new Rewards Track! When the Rewards Track refreshes with the Voyage to the Sunken City launch, all players will automatically be granted any unclaimed rewards on both the free Rewards Track and the Tavern Pass track (if purchased), and a completely new Voyage to the Sunken City Rewards Track of unlockable treasure will take its place.</p>
+                  <p class="modal-title">Rewards Track</p>
+                  <p>The free Rewards Track for Voyage to the Sunken City will include packs from Voyage to the Sunken City, Standard packs, Tavern Tickets, a random Epic card, two random Legendary cards, a Murky Epic Mercenary Card, a Sunken City card back, and a lot of Gold! There are also 14 Golden cards* and the Ambassador Faelin Legendary minion, from the set. For finishing the Rewards Track, you'll get to choose from one of 10 returning Hero Skins.</p>
+                  <p class="modal-title">Tavern Pass</p>
+                  <p>Purchasing the Tavern Pass at any point during the expansion will immediately grant the Diamond Sir Finley, Sea Guide Legendary minion, a 10% XP Boost that lasts for the rest of the duration of the expansion, and all other items up to your current level on the paid track. As you progress with the Tavern Pass during the Voyage to the Sunken City expansion, you can earn additional XP Boosts, the uncraftable Golden Blademaster Okani Legendary minion, the Ambassador Faelin hero skin and card back, three Murky Mercenary Portraits, a new Battlegrounds Bartender, eight Battlegrounds hero skins, eleven Hearthstone hero skins, and a new cosmetic coin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- FRIENDS -->
+      <section class="friends">
+        <div class="favorites-list">
+          <ion-icon name="star"></ion-icon>
+          <p>Favorites - 3/3</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-2.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Bajheera</p>
+                <p>Blade's Edge Arena</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-3.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Kripparrian</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/hearthstone.svg" alt="Hearthstone's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-4.jpg" alt="Friend's Avatar" />
+                <div class="friend-busy"></div>
+              </div>
+              <div class="friend-name">
+                <p>Pilav</p>
+                <p>Busy</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="friends-list">
+          <ion-icon name="people"></ion-icon>
+          <p>Friends - 6/8</p>
+        </div>
+        <ul>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-5.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Itry</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-6.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Madvision</p>
+                <p>Warsong Gulch</p>
+              </div>
+            </div>
+            <img src="../img/logos/warcraft.svg" alt="World of Warcraft's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-7.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Galadar</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/starcraft-ii.svg" alt="Starcraft II's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-8.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Nymeria</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/reforged.svg" alt="Overwatch's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-9.jpg" alt="Friend's Avatar" />
+                <div class="friend-online"></div>
+              </div>
+              <div class="friend-name">
+                <p>Fabriroth</p>
+                <p>In Menu</p>
+              </div>
+            </div>
+            <img src="../img/logos/heroes.svg" alt="Heroes of the Storm's Logo" />
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img src="../img/avatars/avatar-10.jpg" alt="Friend's Avatar" />
+                <div class="friend-away"></div>
+              </div>
+              <div class="friend-name">
+                <p>Shaie</p>
+                <p>Away</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-11.jpg" alt="Friend's Avatar" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Eversio</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="friends-avatar">
+              <div class="friend-avatar">
+                <img class="avatar-off" src="../img/avatars/avatar-12.jpg" alt="Friend's Avatar" />
+                <div class="friend-offline"></div>
+              </div>
+              <div class="friend-name">
+                <p style="color: #b3b3b3">Crimson</p>
+                <p style="color: #b3b3b3">Offline</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

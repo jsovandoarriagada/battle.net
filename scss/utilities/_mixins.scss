@@ -1,0 +1,28 @@
+// MIXINS
+@mixin flex-base($flex-direction, $gap) {
+  display: flex;
+  flex-direction: $flex-direction;
+  gap: $gap;
+}
+
+@mixin flex-alignment($justify-content, $align-items) {
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin measures($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin status($left, $top, $padding) {
+  left: $left;
+  top: $top;
+  padding: $padding;
+}
+
+@mixin cards($background-color, $color, $border-radius-1, $border-radius-2) {
+  background-color: $background-color;
+  color: $color;
+  border-radius: $border-radius-1 $border-radius-2;
+}
