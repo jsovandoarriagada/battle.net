@@ -126,7 +126,7 @@ nav {
     }
 
     @media (max-width: 480px) {
-      .games-list {
+      .favorite-games {
         @include measures(100%, 50px);
       }
     }
@@ -144,12 +144,6 @@ nav {
 
     .selected {
       background-color: $foreground-active;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .games-list {
-      @include measures(100%, 50px);
     }
   }
 }
