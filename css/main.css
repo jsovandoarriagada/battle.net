@@ -39,6 +39,12 @@ body {
     background-color: #23252b;
     border-radius: 5px; }
 
+/* DISABLE TEXT SELECTION */
+.disableTextSelection {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 /* GRID*/
 .layout-all-games,
 .layout-games {

@@ -11,3 +11,10 @@ body {
 
   @import "../components/scrollbar";
 }
+
+/* DISABLE TEXT SELECTION */
+.disableTextSelection {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
