@@ -82,10 +82,14 @@ body {
     overflow-y: auto; }
 
 .layout-all-games {
-  grid-template-areas: "header header user" "nav nav user" "main main friends"; }
+  grid-template-areas: "header header user"
+ "nav nav user"
+ "main main friends"; }
 
 .layout-games {
-  grid-template-areas: "header header user" "nav nav user" "action main friends"; }
+  grid-template-areas: "header header user"
+ "nav nav user"
+ "action main friends"; }
   @media (max-width: 980px) {
     .layout-games .action {
       display: none; } }
@@ -96,13 +100,19 @@ body {
     grid-template-columns: 320px auto;
     grid-template-rows: 70px 70px auto; }
   .layout-all-games {
-    grid-template-areas: "header header" "nav nav" "main main"; }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main main"; }
   .layout-games {
-    grid-template-areas: "header header" "nav nav" "action main"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "action main"; } }
 
 @media (max-width: 980px) {
   .layout-games {
-    grid-template-areas: "header" "nav" "main";
+    grid-template-areas: "header"
+ "nav"
+ "main";
     grid-template-columns: auto;
     grid-template-rows: 70px 70px auto; } }
 
@@ -742,7 +752,7 @@ header .alerts-and-notifications .avatar-and-icon .avatar .online, .user .avatar
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
 
 .cards-games {
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); }
 
 .responsive-iframe {
   width: 100%;
